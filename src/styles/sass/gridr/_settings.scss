@@ -1,0 +1,93 @@
+// +++++
+// Gridr
+// +++++
+// Stats from: http://gs.statcounter.com/#resolution-ww-monthly-201306-201405-bar
+
+// General names
+$singular-column-name : column !default;
+$plural-column-name   : columns !default;
+
+// Grid general info
+$column-gutter         : 30px !default;
+$column-top-padding    : 0 !default;
+$column-bottom-padding : 0 !default;
+$total-columns         : 12 !default;
+
+// Media Query Ranges:
+
+// from smartphones to tablets
+$xsmall-grid-name: xsmall !default;
+$xsmall-range-min: em(480px) !default;
+$xsmall-range-max: em(767px) !default;
+
+// from tablets
+$small-grid-name: small !default;
+$small-range-min: em(768px) !default;
+$small-range-max: em(991px) !default;
+
+// from old computers
+$medium-grid-name: medium !default;
+$medium-range-min: em(992px) !default;
+$medium-range-max: em(1024px) !default;
+
+// from old computers to widescreen laptops
+$large-grid-name: large !default;
+$large-range-min: em(1025px) !default;
+$large-range-max: em(1440px) !default;
+
+// from widescreen laptops to HD resolutions
+$xlarge-grid-name: xlarge !default;
+$xlarge-range-min: em(1441px);
+$xlarge-range-max: em(1920px);
+
+// Container sizes
+$container-small: em(750px);
+$container-medium: em(960px);
+$container-large: em(1200px);
+
+// Media queries:
+$screen: "only screen" !default;
+
+$landscape: "#{$screen} and (orientation: landscape)" !default;
+$portrait: "#{$screen} and (orientation: portrait)" !default;
+
+$xsmall-up: $screen !default;
+$xsmall-only: "#{$screen} and (min-width: #{$xsmall-range-min}) and (max-width: #{$xsmall-range-max})" !default;
+
+$small-up: "#{$screen} and (min-width:#{$small-range-min})" !default;
+$small-only: "#{$screen} and (min-width:#{$small-range-min}) and (max-width:#{$small-range-max})" !default;
+
+$medium-up: "#{$screen} and (min-width:#{$medium-range-min})" !default;
+$medium-only: "#{$screen} and (min-width:#{$medium-range-min}) and (max-width:#{$medium-range-max})" !default;
+
+$large-up: "#{$screen} and (min-width:#{$large-range-min})" !default;
+$large-only: "#{$screen} and (min-width:#{$large-range-min}) and (max-width:#{$large-range-max})" !default;
+
+$xlarge-up: "#{$screen} and (min-width:#{$xlarge-range-min})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{$xlarge-range-min}) and (max-width:#{$xlarge-range-max})" !default;
+
+
+
+// +++++
+// Print
+// +++++
+
+// Media query
+$print: "only print" !default;
+
+// Grid name
+$print-grid-name: print !default;
+
+
+
+
+// +++++
+// Cover
+// +++++
+
+$cover-container-height: 100% !default;
+$cover-height: 100% !default;
+$cover-background-repeat: no-repeat !default;
+$cover-background-attachment: fixed !default;
+$cover-background-position: 50% 50% !default;
+$cover-background-size: cover !default;

@@ -1,0 +1,74 @@
+// rem convertion thanks to http://hugogiraudel.com/2013/03/18/ultimate-rem-mixin/
+@function parseInt($n) { /* 2 */
+  @return $n / ($n * 0 + 1);
+}
+
+@function rem($values, $base: $rem-base) {
+  $px : (); /* 3 */
+  $rem: (); /* 3 */
+
+  @each $value in $values { /* 4 */
+
+    @if $value == 0 or $value == auto { /* 5 */
+      $px : append($px , $value);
+      $rem: append($rem, $value);
+    }
+
+    @else {
+      $unit: unit($value);    /* 6 */
+      $val: parseInt($value); /* 6 */
+
+      @if $unit == "px" {  /* 7 */
+        $px : append($px,  $value);
+        $rem: append($rem, ($val / parseInt($base) + rem));
+      }
+
+      @if $unit == "rem" { /* 7 */
+        $px : append($px,  ($val * parseInt($base) + px));
+        $rem: append($rem, $value);
+      }
+    }
+  }
+
+  @if $px-only == true {
+    @return $px();
+  }
+  @else {
+    @return $rem();
+  }
+}
+
+@function em($values, $base: $em-base) {
+  $px : (); /* 3 */
+  $em: (); /* 3 */
+
+  @each $value in $values { /* 4 */
+
+    @if $value == 0 or $value == auto { /* 5 */
+      $px : append($px , $value);
+      $em: append($em, $value);
+    }
+
+    @else {
+      $unit: unit($value);    /* 6 */
+      $val: parseInt($value); /* 6 */
+
+      @if $unit == "px" {  /* 7 */
+        $px : append($px,  $value);
+        $em: append($em, ($val / parseInt($base) + em));
+      }
+
+      @if $unit == "em" { /* 7 */
+        $px : append($px,  ($val * parseInt($base) + px));
+        $em: append($em, $value);
+      }
+    }
+  }
+
+  @if $px-only == true {
+    @return $px();
+  }
+  @else {
+    @return $em();
+  }
+}

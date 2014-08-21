@@ -1,0 +1,51 @@
+@mixin make-grid($size, $totalColumns: $total-columns) {
+  @include make-colums($size: $size);
+
+  .row {
+    // Aligment:
+    // 1. Horizontal
+    &.#{$size}-left { justify-content: flex-start; }
+    &.#{$size}-center { justify-content: center; }
+    &.#{$size}-right { justify-content: flex-end; }
+    &.#{$size}-justify { justify-content: space-between; }
+    &.#{$size}-around { justify-content: space-around; }
+
+    // 2. Vertical
+    &.#{$size}-top { align-items: flex-start; }
+    &.#{$size}-middle { align-items: center; }
+    &.#{$size}-bottom { align-items: flex-end; }
+    &.#{$size}-baseline { align-items: baseline; }
+    &.#{$size}-stretch { align-items: stretch; }
+
+    // Reverse:
+    &.#{$size}-reverse {
+      flex-direction: row-reverse;
+      flex-wrap: row-reverse;
+      &.#{$size}-left { justify-content: flex-end; }
+      &.#{$size}-right { justify-content: flex-start; }
+    }
+  }
+}
+
+@mixin make-colums($size, $totalColumns: $total-columns) {
+  @for $i from 1 through $totalColumns {
+    .#{$size}-#{$i} {
+      flex-basis: percentage($i / $totalColumns);
+      flex-grow: 0;
+      flex-shrink: 0;
+    }
+  }
+
+  @for $i from 1 through $totalColumns - 1 {
+    .#{$size}-offset-#{$i} { margin-left: percentage($i / $totalColumns); }
+  }
+
+  // Auto width
+  .#{$size}-auto {
+    flex-grow: 1;
+    flex-basis: 0%;
+  }
+
+  .#{$size}-first { order: -1; }
+  .#{$size}-last { order: 1; }
+}
