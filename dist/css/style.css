@@ -1,0 +1,229 @@
+body p, body li {
+  line-height: 1.4;
+  color: #444; }
+
+.demo .column,
+.demo .columns {
+  color: #555;
+  font-size: 12px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold; }
+  .demo .column strong,
+  .demo .columns strong {
+    color: #f40033; }
+  .demo .column:nth-child(even),
+  .demo .columns:nth-child(even) {
+    background-color: #ddd; }
+  .demo .column:nth-child(odd),
+  .demo .columns:nth-child(odd) {
+    background-color: #eee; }
+.demo.row {
+  background-color: #f40033; }
+  .demo.row.double {
+    min-height: 100px; }
+
+code {
+  padding: 2px 4px;
+  font-size: 90%;
+  color: #f40033;
+  background-color: #f8f8f8;
+  border-radius: 4px; }
+
+.container-cover {
+  /*background-image: url('cover.jpg');*/ }
+
+.well {
+  background-color: #f8f8f8;
+  padding: 20px; }
+
+.text-center {
+  text-align: center; }
+
+.text-left {
+  text-align: left; }
+
+.text-right {
+  text-align: right; }
+
+.details {
+  text-align: center;
+  margin-bottom: 50px;
+  color: #fff;
+  font-size: 11px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+  background-color: #f40033; }
+  .details strong {
+    color: #f40033; }
+
+/* line 4, ../scss/simple/_tables.scss */
+.table {
+  background-color: white;
+  border: transparent;
+  border-collapse: separate;
+  margin: 0 0 0.9375rem;
+  overflow: hidden;
+  width: 100%;
+  max-width: 100%; }
+
+/* line 14, ../scss/simple/_tables.scss */
+.table tr th, .table tr td {
+  padding: 0.5625rem 0.625rem;
+  font-size: 0.875rem;
+  color: #222222;
+  text-align: left;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s; }
+
+/* line 23, ../scss/simple/_tables.scss */
+.table tr th button, .table tr th .button, .table tr td button, .table tr td .button {
+  margin: 0; }
+
+/* line 30, ../scss/simple/_tables.scss */
+.table thead tr th, .table tfoot tr th, .table tfoot tr td, .table tbody tr th, .table tbody tr td, .table tr td {
+  display: table-cell;
+  line-height: 1.125rem; }
+
+/* line 37, ../scss/simple/_tables.scss */
+.table thead {
+  background-color: whitesmoke;
+  font-size: 0.875rem;
+  color: #222222;
+  font-weight: bold;
+  padding: 0.5rem 0.625rem 0.625rem; }
+
+/* line 45, ../scss/simple/_tables.scss */
+.table tfoot {
+  background: whitesmoke; }
+
+/* line 48, ../scss/simple/_tables.scss */
+.table tfoot tr th, .table tfoot tr td {
+  padding: 0.5rem 0.625rem 0.625rem;
+  font-size: 0.875rem;
+  font-weight: bold;
+  color: #222222; }
+
+/* line 58, ../scss/simple/_tables.scss */
+.table caption {
+  background: transparent;
+  color: #222222;
+  font-size: 1rem;
+  font-weight: bold; }
+
+/* line 66, ../scss/simple/_tables.scss */
+.table.radius {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px; }
+
+/* line 74, ../scss/simple/_tables.scss */
+.table.striped tr.even, .table.striped tr.alt, .table.striped tr:nth-of-type(even) {
+  background: #f9f9f9; }
+
+/* line 83, ../scss/simple/_tables.scss */
+.table.condensed tr th, .table.condensed tr td {
+  padding: 0.375rem 0.4375rem; }
+
+/* line 93, ../scss/simple/_tables.scss */
+.table.bordered.striped tr th, .table.bordered.striped tr td {
+  border-right: 1px solid #dddddd; }
+
+/* line 101, ../scss/simple/_tables.scss */
+.table.bordered {
+  border: 1px solid #dddddd; }
+
+/* line 105, ../scss/simple/_tables.scss */
+.table.bordered tr th, .table.bordered tr td {
+  border-top: 1px solid #dddddd;
+  border-right: 1px solid #dddddd; }
+
+/* line 114, ../scss/simple/_tables.scss */
+.table.bordered tr th:last-child, .table.bordered tr td:last-child {
+  border-right: 0; }
+
+/* line 125, ../scss/simple/_tables.scss */
+.table.bordered > caption + thead > tr:first-child > th, .table.bordered > caption + thead > tr:first-child > td, .table.bordered > colgroup + thead > tr:first-child > th, .table.bordered > colgroup + thead > tr:first-child > td, .table.bordered > thead:first-child > tr:first-child > th, .table.bordered > thead:first-child > tr:first-child > td {
+  border-top: 0; }
+
+/* line 137, ../scss/simple/_tables.scss */
+.table.hover tbody tr:hover th, .table.hover tbody tr:hover td {
+  background-color: #f0f0f0;
+  color: #222222; }
+
+/* line 154, ../scss/simple/_tables.scss */
+.table.nowrap tr td, .table.nowrap tr th {
+  white-space: nowrap; }
+
+/* line 36, ../scss/simple/mixins/_tables.scss */
+.table th.text-left, .table td.text-left {
+  text-align: left; }
+
+/* line 40, ../scss/simple/mixins/_tables.scss */
+.table th.text-right, .table td.text-right {
+  text-align: right; }
+
+/* line 44, ../scss/simple/mixins/_tables.scss */
+.table th.text-center, .table td.text-center {
+  text-align: center; }
+
+/* line 48, ../scss/simple/mixins/_tables.scss */
+.table th.text-justify, .table td.text-justify {
+  text-align: justify; }
+
+/* line 4, ../scss/simple/mixins/_tables.scss */
+.table tr.text-left th, .table tr.text-left td {
+  text-align: left; }
+
+/* line 11, ../scss/simple/mixins/_tables.scss */
+.table tr.text-right th, .table tr.text-right td {
+  text-align: right; }
+
+/* line 18, ../scss/simple/mixins/_tables.scss */
+.table tr.text-center th, .table tr.text-center td {
+  text-align: center; }
+
+/* line 25, ../scss/simple/mixins/_tables.scss */
+.table tr.text-justify th, .table tr.text-justify td {
+  text-align: justify; }
+
+/* line 60, ../scss/simple/mixins/_tables.scss */
+.table thead.text-left tr th, .table thead.text-left tr td, .table tbody.text-left tr th, .table tbody.text-left tr td, .table tfoot.text-left tr th, .table tfoot.text-left tr td {
+  text-align: left; }
+
+/* line 69, ../scss/simple/mixins/_tables.scss */
+.table thead.text-right tr th, .table thead.text-right tr td, .table tbody.text-right tr th, .table tbody.text-right tr td, .table tfoot.text-right tr th, .table tfoot.text-right tr td {
+  text-align: right; }
+
+/* line 78, ../scss/simple/mixins/_tables.scss */
+.table thead.text-center tr th, .table thead.text-center tr td, .table tbody.text-center tr th, .table tbody.text-center tr td, .table tfoot.text-center tr th, .table tfoot.text-center tr td {
+  text-align: center; }
+
+/* line 87, ../scss/simple/mixins/_tables.scss */
+.table thead.text-justify tr th, .table thead.text-justify tr td, .table tbody.text-justify tr th, .table tbody.text-justify tr td, .table tfoot.text-justify tr th, .table tfoot.text-justify tr td {
+  text-align: justify; }
+
+/* line 4, ../scss/simple/mixins/_tables.scss */
+.table thead tr.text-left th, .table thead tr.text-left td, .table tbody tr.text-left th, .table tbody tr.text-left td, .table tfoot tr.text-left th, .table tfoot tr.text-left td {
+  text-align: left; }
+
+/* line 11, ../scss/simple/mixins/_tables.scss */
+.table thead tr.text-right th, .table thead tr.text-right td, .table tbody tr.text-right th, .table tbody tr.text-right td, .table tfoot tr.text-right th, .table tfoot tr.text-right td {
+  text-align: right; }
+
+/* line 18, ../scss/simple/mixins/_tables.scss */
+.table thead tr.text-center th, .table thead tr.text-center td, .table tbody tr.text-center th, .table tbody tr.text-center td, .table tfoot tr.text-center th, .table tfoot tr.text-center td {
+  text-align: center; }
+
+/* line 25, ../scss/simple/mixins/_tables.scss */
+.table thead tr.text-justify th, .table thead tr.text-justify td, .table tbody tr.text-justify th, .table tbody tr.text-justify td, .table tfoot tr.text-justify th, .table tfoot tr.text-justify td {
+  text-align: justify; }
+
+/* line 105, ../scss/simple/mixins/_tables.scss */
+.table tr.danger td, .table tr.danger th {
+  background-color: #cf280e;
+  color: white; }

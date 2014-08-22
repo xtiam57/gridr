@@ -1,35 +1,36 @@
 var config = {
-  // Base Paths
+
   SRC_PATH     : './src',
   DIST_PATH    : './dist',
 
-  // General Settings
-  ENV          : 'development',                             // Options: development | production
 
-  // SASS Settings
+  ENV          : 'development',
+
+
   get SASS_PATH() {
     return [
-      this.SRC_PATH + '/styles/gridr.scss',            // Custom styles
-      this.SRC_PATH + '/styles/normalize.scss',          // Vendor's styles (e.g. bootstrap, font-awesome, foundation, etc.)
+      this.SRC_PATH + '/styles/gridr.scss',
+      this.SRC_PATH + '/styles/normalize.scss',
+      this.SRC_PATH + '/styles/style.scss',
     ];
   },
   get SASS_WATCH() {
-    return this.SRC_PATH + '/styles/**/*.scss';        // We are going to watch all *.scss files to compile
+    return this.SRC_PATH + '/styles/**/*.scss';
   },
 
-  // CSS Settings
+
   get CSS_PATH() {
-    return this.DIST_PATH + '/css';                         // The folder for all compiled CSS
+    return this.DIST_PATH + '/css';
   },
 
-  // HTML Settings
+
   get HTML_WATCH() {
     return [
-      this.SRC_PATH + '/index.html',                        // Watch the main index.html
+      this.SRC_PATH + '/index.html',
     ];
   },
   get HTML_DIST() {
-    return this.DIST_PATH;                                  // When build task is excecuted we put all minifyed HTML here
+    return this.DIST_PATH;
   },
 };
 

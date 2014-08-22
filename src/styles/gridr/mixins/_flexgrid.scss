@@ -39,14 +39,14 @@
 @mixin make-colums($size, $totalColumns: $total-columns) {
   @for $i from 1 through $totalColumns {
     .#{$size}-#{$i} {
-      flex-basis: percentage($i / $totalColumns);
+      flex-basis: percentage($i / $totalColumns) + 0.000005%;
       flex-grow: 0;
       flex-shrink: 0;
     }
   }
 
   @for $i from 1 through $totalColumns - 1 {
-    .#{$size}-offset-#{$i} { margin-left: percentage($i / $totalColumns); }
+    .#{$size}-offset-#{$i} { margin-left: percentage($i / $totalColumns) + 0.000005%; }
   }
 
   // Auto width
