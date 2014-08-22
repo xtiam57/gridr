@@ -20,12 +20,12 @@ $xsmall-grid-name: xsmall !default;
 $xsmall-range-min: em(480px) !default;
 $xsmall-range-max: em(767px) !default;
 
-// from tablets
+// for tablets
 $small-grid-name: small !default;
 $small-range-min: em(768px) !default;
 $small-range-max: em(991px) !default;
 
-// from old computers
+// for old computers
 $medium-grid-name: medium !default;
 $medium-range-min: em(992px) !default;
 $medium-range-max: em(1024px) !default;
@@ -64,7 +64,7 @@ $large-up: "#{$screen} and (min-width:#{$large-range-min})" !default;
 $large-only: "#{$screen} and (min-width:#{$large-range-min}) and (max-width:#{$large-range-max})" !default;
 
 $xlarge-up: "#{$screen} and (min-width:#{$xlarge-range-min})" !default;
-$xlarge-only: "#{$screen} and (min-width:#{$xlarge-range-min}) and (max-width:#{$xlarge-range-max})" !default;
+$xlarge-only: "#{$screen} and (min-width:#{$xlarge-range-min})" !default;
 
 
 
@@ -88,6 +88,6 @@ $print-grid-name: print !default;
 $cover-container-height: 100% !default;
 $cover-height: 100% !default;
 $cover-background-repeat: no-repeat !default;
-$cover-background-attachment: fixed !default;
+$cover-background-attachment: scroll !default;
 $cover-background-position: 50% 50% !default;
 $cover-background-size: cover !default;

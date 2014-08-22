@@ -9,12 +9,12 @@ var config = {
   // SASS Settings
   get SASS_PATH() {
     return [
-      this.SRC_PATH + '/styles/sass/gridr.scss',            // Custom styles
-      this.SRC_PATH + '/styles/sass/vendors.scss',          // Vendor's styles (e.g. bootstrap, font-awesome, foundation, etc.)
+      this.SRC_PATH + '/styles/gridr.scss',            // Custom styles
+      this.SRC_PATH + '/styles/normalize.scss',          // Vendor's styles (e.g. bootstrap, font-awesome, foundation, etc.)
     ];
   },
   get SASS_WATCH() {
-    return this.SRC_PATH + '/styles/sass/**/*.scss';        // We are going to watch all *.scss files to compile
+    return this.SRC_PATH + '/styles/**/*.scss';        // We are going to watch all *.scss files to compile
   },
 
   // CSS Settings
@@ -30,14 +30,6 @@ var config = {
   },
   get HTML_DIST() {
     return this.DIST_PATH;                                  // When build task is excecuted we put all minifyed HTML here
-  },
-
-  // Fonts Settings
-  get FONTS_SRC() {
-    return this.SRC_PATH + '/assets/fonts/*';
-  },
-  get FONTS_DIST() {
-    return this.DIST_PATH + '/fonts/';                      // All fonts in distribution folder
   },
 };
 
@@ -65,7 +57,12 @@ gulp.task('browser-sync', function() {
 gulp.task('sass', function() {
   gulp.src(config.SASS_PATH)
     .pipe(plumber())
-    .pipe(sass({ compass: true, lineNumbers: true }))
+    .pipe(sass({
+      compass: true,
+      lineNumbers: false,
+      precision: 6,
+      style: (config.ENV === 'development' ? 'nested' : 'compressed')
+    }))
     .pipe(autoprefixer(
       'last 2 version',
       '> 1%',
@@ -76,12 +73,6 @@ gulp.task('sass', function() {
     ))
     .pipe(gulp.dest(config.CSS_PATH))
     .pipe(browserSync.reload({ stream: true }));
-});
-
-gulp.task('fonts', function() {
-  return gulp.src(config.FONTS_SRC)
-    .pipe(gulp.dest(config.FONTS_DIST))
-    .pipe(browserSync.reload({ stream: true, once: true }));
 });
 
 gulp.task('html', function() {
@@ -101,7 +92,7 @@ gulp.task('watch', function() {
 });
 
 gulp.task('default', function() {
-  runSequence(['sass', 'fonts'], 'browser-sync', 'watch');
+  runSequence(['sass'], 'browser-sync', 'watch');
 });
 
-gulp.task('build', ['sass', 'fonts', 'html']);
+gulp.task('build', ['sass', 'html']);

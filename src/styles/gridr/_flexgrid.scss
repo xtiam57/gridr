@@ -1,0 +1,88 @@
+// Set box-sizing globally to handle padding and border widths
+*,
+*:before,
+*:after {
+  @include box-sizing(border-box);
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.#{$singular-column-name},
+.#{$plural-column-name} {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: $column-top-padding rem($column-gutter / 2) $column-bottom-padding;
+  flex-basis: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .row {
+    margin-left: rem($column-gutter / -2);
+    margin-right: rem($column-gutter / -2);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  overflow: hidden;
+  padding-left: rem($column-gutter / 2);
+  padding-right: rem($column-gutter / 2);
+  @include clearfix();
+
+  .row {
+    margin-left: rem($column-gutter / -2);
+    margin-right: rem($column-gutter / -2);
+  }
+}
+
+.container {
+  @extend .container-fluid;
+
+  @media #{$small-up} {
+    width: $container-small;
+  }
+
+  @media #{$medium-up} {
+    width: $container-medium;
+  }
+
+  @media #{$large-up} {
+    width: $container-large;
+  }
+}
+
+.container-cover {
+  min-height: $cover-height;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  overflow: hidden;
+  background-repeat: $cover-background-repeat;
+  background-attachment: $cover-background-attachment;
+  background-position: $cover-background-position;
+  background-size: $cover-background-size;
+
+  .row {
+    flex-grow: 1;
+    flex-basis: 0%;
+  }
+}
+
+.cover-scroll { background-attachment: scroll !important; }
+.cover-fixed { background-attachment: fixed !important; }
+
+@media #{$xsmall-up} { @include make-grid($size: $xsmall-grid-name); }
+@media #{$small-up} { @include make-grid($size: $small-grid-name); }
+@media #{$medium-up} { @include make-grid($size: $medium-grid-name); }
+@media #{$large-up} { @include make-grid($size: $large-grid-name); }
+@media #{$xlarge-up} { @include make-grid($size: $xlarge-grid-name); }
+@media #{$print} { @include make-grid($size: $print-grid-name); }

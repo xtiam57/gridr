@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <title>Gridr</title>
-    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
 
     <!-- Styles -->
-    <link rel="stylesheet" href="css/vendors.css">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/gridr.css">
 
     <!--[if lt IE 9]>
@@ -15,15 +15,29 @@
     <![endif]-->
 
     <style>
+        body p {
+            line-height: 1.4;
+        }
         .column,
         .columns {
-            background-color: #ddd;
-            border: solid 1px #ccc;
             color: #555;
             font-size: 12px;
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: center;
+            font-weight: bold;
+        }
+        .column strong,
+        .columns strong {
+            color: #f40033;
+        }
+        .column:nth-child(even),
+        .columns:nth-child(even) {
+            background-color: #ddd;
+        }
+        .column:nth-child(odd),
+        .columns:nth-child(odd) {
+            background-color: #eee;
         }
         .row {
             background-color: #aaa;
@@ -31,14 +45,57 @@
         .row.double {
             min-height: 100px;
         }
-        .row.triple {
-            min-height: 2000px;
+        code {
+            padding: 2px 4px;
+            font-size: 90%;
+            color: #f40033;
+            background-color: #f8f8f8;
+            border-radius: 4px;
+        }
+        .container-cover {
+            /*background-image: url('cover.jpg');*/
+        }
+        .container-cover .row,
+        .container-cover .row .column {
+            font-size: 16px;
+            background: none;
+        }
+        .container-cover h1 {
+            font-size: 6rem;
+            color: #FFF;
+            margin: 0;
+        }
+        .container-cover h2 {
+            color: #FFF;
+            margin: 5px 0 0;
         }
     </style>
 </head>
 <body>
 
+    <div class="container-cover cover-scroll">
+        <div class="row xsmall-middle xsmall-center">
+            <div class="xsmall-7 column">
+                <img src="color-logo.png" alt="" width="400">
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="xsmall-12 small-2 medium-8 large-4 xlarge-6 columns">
+            .xsmall-12 .small-2 .medium-8 .large-4 .xlarge-6 .columns
+        </div>
+        <div class="xsmall-12 small-2 medium-4 large-4 xlarge-3 columns">
+            .xsmall-12 .small-2 .medium-4 .large-4 .xlarge-3 .columns
+        </div>
+        <div class="xsmall-12 small-8 medium-12 large-4 xlarge-3 columns">
+            .xsmall-12 .small-8 .medium-12 .large-4 .xlarge-3 .columns
+        </div>
+    </div>
+
     <div class="container centered">
+
+        <!-- Content -->
         <h1>Responsive</h1>
         <p>Responsive modifiers enable specifying different column sizes, offsets, alignment and distribution at xsmall, small, medium & large and xlarge viewport widths.</p>
 
@@ -262,16 +319,16 @@
             </div>
         </div>
 
-        <h4>*-strech</h4>
-        <div class="row medium-strech double">
+        <h4>*-stretch</h4>
+        <div class="row medium-stretch double">
             <div class="medium-4 column">
-                .medium-4 .column <strong>inside</strong> .row .medium-strech
+                .medium-4 .column <strong>inside</strong> .row .medium-stretch
             </div>
             <div class="medium-4 column">
-                .medium-4 .column <strong>inside</strong> .row .medium-strech
+                .medium-4 .column <strong>inside</strong> .row .medium-stretch
             </div>
             <div class="medium-4 column">
-                .medium-4 .column <strong>inside</strong> .row .medium-strech
+                .medium-4 .column <strong>inside</strong> .row .medium-stretch
             </div>
         </div>
 
@@ -306,14 +363,13 @@
             <div class="small-2 columns">5</div>
         </div>
 
-
-
-
         <br>
         <br>
         <br>
-
+        <!-- /Content -->
     </div>
+
+
 
 </body>
 </html>

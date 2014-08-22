@@ -25,6 +25,15 @@
       &.#{$size}-right { justify-content: flex-start; }
     }
   }
+
+  .#{$singular-column-name},
+  .#{$plural-column-name} {
+    &.#{$size}-top { align-self: flex-start; }
+    &.#{$size}-middle { align-self: center; }
+    &.#{$size}-bottom { align-self: flex-end; }
+    &.#{$size}-baseline { align-self: baseline; }
+    &.#{$size}-stretch { align-self: stretch; }
+  }
 }
 
 @mixin make-colums($size, $totalColumns: $total-columns) {
