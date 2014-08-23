@@ -1,3 +1,5 @@
+@import "compass/css3";
+
 $main-color: #f40033;
 
 body {
@@ -90,9 +92,24 @@ code {
 
 
 
+$global-radius: 5px !default;
+$global-rounded: 13986px !default;
 
+.rounded { @include border-radius($global-rounded); }
+.radius { @include border-radius($global-radius); }
 
+a {
+  color: $main-color;
+  text-decoration: none;
+  line-height: inherit;
 
+  &:hover,
+  &:focus {
+    color: $main-color;
+    text-decoration: underline;
+  }
+  img { border:none; }
+}
 
 
 /* line 4, ../scss/simple/_tables.scss */
@@ -165,3 +182,144 @@ code {
 .table thead tr.text-justify th, .table thead tr.text-justify td, .table tbody tr.text-justify th, .table tbody tr.text-justify td, .table tfoot tr.text-justify th, .table tfoot tr.text-justify td { text-align: justify; }
 /* line 105, ../scss/simple/mixins/_tables.scss */
 .table tr.danger td, .table tr.danger th { background-color: #cf280e; color: white; }
+
+
+
+
+
+/* line 4, ../scss/simple/_buttons.scss */
+button, .button { outline: none; padding: 0.625rem 1.125rem; margin-bottom: 0.9375rem; display: inline-block; font-size: 0.9375rem; border: 1px solid transparent; white-space: nowrap; font-weight: normal; text-align: center; cursor: pointer; background-image: none; text-rendering: optimizeLegibility; -webkit-font-smoothing: antialiased; text-decoration: none; line-height: 1.5; position: relative; -moz-transition: all 0.5s; -o-transition: all 0.5s; -webkit-transition: all 0.5s; transition: all 0.5s; background-color: #DDD; color: #666; }
+/* line 25, ../scss/simple/mixins/_buttons.scss */
+button:hover, .button:hover { color: #666; text-decoration: none; }
+/* line 9, ../scss/simple/_buttons.scss */
+button.xsmall, .button-group.xsmall button, .button-group.xsmall .button, .button.xsmall { padding: 0.25rem 0.5rem; font-size: 0.625rem; }
+/* line 10, ../scss/simple/_buttons.scss */
+button.small, .button-group.small button, .button-group.small .button, .button.small { padding: 0.375rem 0.625rem; font-size: 0.8125rem; }
+/* line 11, ../scss/simple/_buttons.scss */
+button.medium, .button-group.medium button, .button-group.medium .button, .button.medium { padding: 0.625rem 1.125rem; font-size: 0.9375rem; }
+/* line 12, ../scss/simple/_buttons.scss */
+button.large, .button-group.large button, .button-group.large .button, .button.large { padding: 0.875rem 1.625rem; font-size: 1.125rem; }
+/* line 13, ../scss/simple/_buttons.scss */
+button.xlarge, .button-group.xlarge button, .button-group.xlarge .button, .button.xlarge { padding: 1rem 1.875rem; font-size: 1.1875rem; }
+/* line 14, ../scss/simple/_buttons.scss */
+button.xxlarge, .button-group.xxlarge button, .button-group.xxlarge .button, .button.xxlarge { padding: 1.25rem 2.375rem; font-size: 1.25rem; }
+/* line 17, ../scss/simple/_buttons.scss */
+button.primary, .button.primary { color: white; border-color: #00a8d8; background-color: #00bcf2; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.primary:hover, button.primary:focus, .button.primary:hover, .button.primary:focus { color: white; background-color: #0094bf; border-color: #00a8d8; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.primary:active, button.primary.active, .button.primary:active, .button.primary.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.primary.disabled, button.primary[disabled], fieldset[disabled] button.primary, .button.primary.disabled, .button.primary[disabled], fieldset[disabled] .button.primary { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.primary.outline, .button.primary.outline { color: #00bcf2; border-color: #00bcf2; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.primary.outline:hover, button.primary.outline:focus, .button.primary.outline:hover, .button.primary.outline:focus { background-color: #00bcf2; border-color: #00bcf2; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.primary.outline.transparent, .button.primary.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.primary.outline.transparent:hover, button.primary.outline.transparent:focus, .button.primary.outline.transparent:hover, .button.primary.outline.transparent:focus { background-color: #00bcf2; border-color: #00bcf2; color: white; }
+/* line 18, ../scss/simple/_buttons.scss */
+button.secundary, .button.secundary { color: white; border-color: #db002e; background-color: #f40033; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.secundary:hover, button.secundary:focus, .button.secundary:hover, .button.secundary:focus { color: white; background-color: #c10028; border-color: #db002e; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.secundary:active, button.secundary.active, .button.secundary:active, .button.secundary.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.secundary.disabled, button.secundary[disabled], fieldset[disabled] button.secundary, .button.secundary.disabled, .button.secundary[disabled], fieldset[disabled] .button.secundary { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.secundary.outline, .button.secundary.outline { color: #f40033; border-color: #f40033; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.secundary.outline:hover, button.secundary.outline:focus, .button.secundary.outline:hover, .button.secundary.outline:focus { background-color: #f40033; border-color: #f40033; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.secundary.outline.transparent, .button.secundary.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.secundary.outline.transparent:hover, button.secundary.outline.transparent:focus, .button.secundary.outline.transparent:hover, .button.secundary.outline.transparent:focus { background-color: #f40033; border-color: #f40033; color: white; }
+/* line 19, ../scss/simple/_buttons.scss */
+button.info, .button.info { color: white; border-color: #0097d3; background-color: #00a9ec; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.info:hover, button.info:focus, .button.info:hover, .button.info:focus { color: white; background-color: #0084b9; border-color: #0097d3; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.info:active, button.info.active, .button.info:active, .button.info.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.info.disabled, button.info[disabled], fieldset[disabled] button.info, .button.info.disabled, .button.info[disabled], fieldset[disabled] .button.info { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.info.outline, .button.info.outline { color: #00a9ec; border-color: #00a9ec; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.info.outline:hover, button.info.outline:focus, .button.info.outline:hover, .button.info.outline:focus { background-color: #00a9ec; border-color: #00a9ec; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.info.outline.transparent, .button.info.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.info.outline.transparent:hover, button.info.outline.transparent:focus, .button.info.outline.transparent:hover, .button.info.outline.transparent:focus { background-color: #00a9ec; border-color: #00a9ec; color: white; }
+/* line 20, ../scss/simple/_buttons.scss */
+button.warning, .button.warning { color: white; border-color: #ce6300; background-color: #e76f00; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.warning:hover, button.warning:focus, .button.warning:hover, .button.warning:focus { color: white; background-color: #b45600; border-color: #ce6300; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.warning:active, button.warning.active, .button.warning:active, .button.warning.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.warning.disabled, button.warning[disabled], fieldset[disabled] button.warning, .button.warning.disabled, .button.warning[disabled], fieldset[disabled] .button.warning { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.warning.outline, .button.warning.outline { color: #e76f00; border-color: #e76f00; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.warning.outline:hover, button.warning.outline:focus, .button.warning.outline:hover, .button.warning.outline:focus { background-color: #e76f00; border-color: #e76f00; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.warning.outline.transparent, .button.warning.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.warning.outline.transparent:hover, button.warning.outline.transparent:focus, .button.warning.outline.transparent:hover, .button.warning.outline.transparent:focus { background-color: #e76f00; border-color: #e76f00; color: white; }
+/* line 21, ../scss/simple/_buttons.scss */
+button.success, .button.success { color: white; border-color: #12872a; background-color: #159e31; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.success:hover, button.success:focus, .button.success:hover, .button.success:focus { color: white; background-color: #0f7123; border-color: #12872a; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.success:active, button.success.active, .button.success:active, .button.success.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.success.disabled, button.success[disabled], fieldset[disabled] button.success, .button.success.disabled, .button.success[disabled], fieldset[disabled] .button.success { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.success.outline, .button.success.outline { color: #159e31; border-color: #159e31; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.success.outline:hover, button.success.outline:focus, .button.success.outline:hover, .button.success.outline:focus { background-color: #159e31; border-color: #159e31; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.success.outline.transparent, .button.success.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.success.outline.transparent:hover, button.success.outline.transparent:focus, .button.success.outline.transparent:hover, .button.success.outline.transparent:focus { background-color: #159e31; border-color: #159e31; color: white; }
+/* line 22, ../scss/simple/_buttons.scss */
+button.danger, .button.danger { color: white; border-color: #b7230c; background-color: #cf280e; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.danger:hover, button.danger:focus, .button.danger:hover, .button.danger:focus { color: white; background-color: #9f1f0b; border-color: #b7230c; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.danger:active, button.danger.active, .button.danger:active, .button.danger.active { color: white; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.danger.disabled, button.danger[disabled], fieldset[disabled] button.danger, .button.danger.disabled, .button.danger[disabled], fieldset[disabled] .button.danger { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.danger.outline, .button.danger.outline { color: #cf280e; border-color: #cf280e; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.danger.outline:hover, button.danger.outline:focus, .button.danger.outline:hover, .button.danger.outline:focus { background-color: #cf280e; border-color: #cf280e; color: white; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.danger.outline.transparent, .button.danger.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.danger.outline.transparent:hover, button.danger.outline.transparent:focus, .button.danger.outline.transparent:hover, .button.danger.outline.transparent:focus { background-color: #cf280e; border-color: #cf280e; color: white; }
+/* line 23, ../scss/simple/_buttons.scss */
+button.default, .button.default { color: #555555; border-color: #e8e8e8; background-color: whitesmoke; }
+/* line 73, ../scss/simple/mixins/_buttons.scss */
+button.default:hover, button.default:focus, .button.default:hover, .button.default:focus { color: #555555; background-color: gainsboro; border-color: #e8e8e8; }
+/* line 80, ../scss/simple/mixins/_buttons.scss */
+button.default:active, button.default.active, .button.default:active, .button.default.active { color: #555555; background-image: none; -moz-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); -webkit-box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); box-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125); }
+/* line 87, ../scss/simple/mixins/_buttons.scss */
+button.default.disabled, button.default[disabled], fieldset[disabled] button.default, .button.default.disabled, .button.default[disabled], fieldset[disabled] .button.default { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 38, ../scss/simple/mixins/_buttons.scss */
+button.default.outline, .button.default.outline { color: #555555; border-color: #555555; background-color: white; }
+/* line 43, ../scss/simple/mixins/_buttons.scss */
+button.default.outline:hover, button.default.outline:focus, .button.default.outline:hover, .button.default.outline:focus { background-color: whitesmoke; border-color: #555555; color: #555555; }
+/* line 50, ../scss/simple/mixins/_buttons.scss */
+button.default.outline.transparent, .button.default.outline.transparent { background-color: transparent; }
+/* line 53, ../scss/simple/mixins/_buttons.scss */
+button.default.outline.transparent:hover, button.default.outline.transparent:focus, .button.default.outline.transparent:hover, .button.default.outline.transparent:focus { background-color: whitesmoke; border-color: #555555; color: #555555; }
+/* line 26, ../scss/simple/_buttons.scss */
+button.link, .button.link { color: #00bcf2; background-color: transparent; text-decoration: none; }
+/* line 31, ../scss/simple/_buttons.scss */
+button.link:hover, button.link:focus, .button.link:hover, .button.link:focus { color: #0094bf; background-color: transparent; text-decoration: underline; }
+/* line 41, ../scss/simple/_buttons.scss */
+button.link.disabled, button.link[disabled], fieldset[disabled] button.link, .button.link.disabled, .button.link[disabled], fieldset[disabled] .button.link { pointer-events: none; filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=65); opacity: 0.65; -moz-box-shadow: none; -webkit-box-shadow: none; box-shadow: none; }
+/* line 51, ../scss/simple/_buttons.scss */
+button.block, .button.block { display: block; width: 100%; padding-left: 0; padding-right: 0; }
