@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/gridr.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="prettify.css">
 
     <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
@@ -185,6 +186,20 @@
                         .xsmall-12 .small-8 .medium-12 .large-4 .xlarge-3 .columns
                     </div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;xsmall-12 small-2 medium-8 large-4 xlarge-6 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-12 small-2 medium-4 large-4 xlarge-3 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-12 small-8 medium-12 large-4 xlarge-3 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Responsive -->
 
                 <!-- Offset -->
@@ -202,6 +217,30 @@
                 <div class="row demo">
                     <div class="medium-6 medium-offset-3 columns">.medium-6 .medium-offset-3 .columns</div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-4 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 medium-offset-4 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-3 medium-offset-3 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 medium-offset-3 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-6 medium-offset-3 columns&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Offset -->
 
                 <!-- Auto-Width -->
@@ -213,7 +252,7 @@
                         .small-2 .column
                     </div>
                     <div class="small-auto small-offset-1 column">
-                        .small-auto .column
+                        .small-auto .small-offset-1 .column
                     </div>
                 </div>
                 <div class="row demo">
@@ -240,9 +279,47 @@
                 </div>
                 <div class="row demo">
                     <div class="large-auto large-offset-4 column">
-                        .large-auto .large-offset-1 .column
+                        .large-auto .large-offset-4 .column
                     </div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;small-auto small-offset-1 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;xsmall-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;xsmall-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-auto column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;large-auto large-offset-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Auto-Width -->
 
                 <!-- Nested -->
@@ -253,41 +330,76 @@
                     <div class="medium-auto column">
                         .medium-auto .column
                         <div class="row">
-                            <div class="small-8 columns">
-                                .small-8 .columns
+                            <div class="small-8 column">
+                                .small-8 .column
                                 <div class="row">
-                                    <div class="small-6 columns">
-                                        .small-6 .columns
+                                    <div class="small-6 column">
+                                        .small-6 .column
                                     </div>
-                                    <div class="small-6 columns">
-                                        .small-6 .columns
+                                    <div class="small-6 column">
+                                        .small-6 .column
                                     </div>
                                 </div>
                             </div>
-                            <div class="small-4 columns">
-                                .small-4 .columns
+                            <div class="small-4 column">
+                                .small-4 .column
                             </div>
                         </div>
                     </div>
                     <div class="medium-auto column">
                         .medium-auto .column
                         <div class="row">
-                            <div class="small-6 columns">
-                                .small-6 .columns
+                            <div class="small-6 column">
+                                .small-6 .column
                             </div>
-                            <div class="small-6 columns">
-                                .small-6 .columns
+                            <div class="small-6 column">
+                                .small-6 .column
                             </div>
                         </div>
                     </div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-auto column&quot;&gt;
+        ...
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;small-8 column&quot;&gt;
+                ...
+                &lt;div class=&quot;row&quot;&gt;
+                    &lt;div class=&quot;small-6 column&quot;&gt;
+                        ...
+                    &lt;/div&gt;
+                    &lt;div class=&quot;small-6 column&quot;&gt;
+                        ...
+                    &lt;/div&gt;
+                &lt;/div&gt;
+            &lt;/div&gt;
+            &lt;div class=&quot;small-4 column&quot;&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-auto column&quot;&gt;
+        ...
+        &lt;div class=&quot;row&quot;&gt;
+            &lt;div class=&quot;small-6 column&quot;&gt;
+                ...
+            &lt;/div&gt;
+            &lt;div class=&quot;small-6 column&quot;&gt;
+                ...
+            &lt;/div&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Nested -->
 
                 <!-- Horizontal Aligment -->
                 <h1>Horizontal Aligment</h1>
                 <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
 
-                <h4>*-center</h4>
+                <h4>{size}-<span class="main-color">center</span></h4>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-center demo">
                     <div class="medium-3 column">
@@ -298,8 +410,19 @@
                     </div>
                 </div>
 
-                <h4>*-left</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Est aspernatur, asperiores, perspiciatis impedit unde illum veniam aliquid explicabo at blanditiis sit eius, animi non necessitatibus magnam esse, similique qui numquam?</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-center&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">left</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-left demo">
                     <div class="medium-3 column">
                         .medium-3 .column <strong>inside</strong> .row .medium-left
@@ -309,8 +432,19 @@
                     </div>
                 </div>
 
-                <h4>*-right</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dignissimos totam laborum cumque aliquid magnam, numquam, natus doloremque sint sunt quas alias reiciendis corporis accusantium facilis deleniti magni maiores, quos fuga.</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-left&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">right</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-right demo">
                     <div class="medium-3 column">
                         .medium-3 .column <strong>inside</strong> .row .medium-right
@@ -320,8 +454,19 @@
                     </div>
                 </div>
 
-                <h4>*-justify</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, soluta, sunt cupiditate, facere ipsam cumque modi libero dolores officiis excepturi blanditiis impedit asperiores reiciendis fugiat velit molestiae saepe reprehenderit? Enim?</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-right&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">justify</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-justify demo">
                     <div class="medium-3 column">
                         .medium-3 .column <strong>inside</strong> .row .medium-justify
@@ -334,8 +479,22 @@
                     </div>
                 </div>
 
-                <h4>*-around</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur, nulla, atque. Vero possimus iste eligendi natus in officia temporibus vel aperiam ducimus, ipsa sunt nemo aspernatur nisi rerum quos pariatur.</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-justify&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">around</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-around demo">
                     <div class="medium-3 column">
                         .medium-3 .column <strong>inside</strong> .row .medium-around
@@ -347,14 +506,28 @@
                         .medium-3 .column <strong>inside</strong> .row .medium-around
                     </div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-around&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Horizontal Aligment -->
 
                 <!-- Vertical Aligment -->
                 <h1>Vertical Aligment</h1>
                 <p>Add classes to align elements to the start or end of a row as well as the top, bottom, or center of a column</p>
 
-                <h4>*-top</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione sapiente magnam atque laborum ipsa inventore ea, earum tempora. Ab porro laudantium accusamus error atque in placeat qui voluptates! Obcaecati, laudantium.</p>
+                <h4>{size}-<span class="main-color">top</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-top double demo">
                     <div class="medium-4 column">
                         .medium-4 .column <strong>inside</strong> .row .medium-top
@@ -367,8 +540,50 @@
                     </div>
                 </div>
 
-                <h4>*-middle</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veniam nihil minus earum similique, perspiciatis et nisi nulla facere, repudiandae architecto officiis magni iste, incidunt adipisci deserunt id, provident quia repellendus.</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-top&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        &lt;h3&gt;...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque amet in recusandae cum quibusdam, sed dignissimos eius sit maxime veritatis minima laboriosam beatae nisi earum minus aut, asperiores voluptas! Vel.</p>
+
+                <div class="row double demo">
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                    <div class="medium-4 medium-top column">
+                        .medium-4 <strong>.medium-top</strong> .column
+                    </div>
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 medium-top column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">middle</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-middle double demo">
                     <div class="medium-4 column">
                         .medium-4 .column <strong>inside</strong> .row .medium-middle
@@ -381,8 +596,50 @@
                     </div>
                 </div>
 
-                <h4>*-bottom</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ipsa aut veniam voluptatibus magnam quis laudantium distinctio est, praesentium ut porro deleniti tempora, quibusdam aliquid a maiores, dolore repellat! Eos, saepe!</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-middle&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic totam consectetur, voluptatibus necessitatibus minus quas corporis facilis sint doloremque quos aperiam consequatur animi fugiat impedit assumenda inventore eum atque distinctio!</p>
+
+                <div class="row double demo">
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                    <div class="medium-4 medium-middle column">
+                        .medium-4 <strong>.medium-middle</strong> .column
+                    </div>
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 medium-middle column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">bottom</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-bottom double demo">
                     <div class="medium-4 column">
                         .medium-4 .column <strong>inside</strong> .row .medium-bottom
@@ -395,8 +652,50 @@
                     </div>
                 </div>
 
-                <h4>*-baseline</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusantium illum, sunt eveniet. Hic, deserunt, eveniet. Aliquid dolorum voluptatem molestiae omnis doloremque, suscipit earum, quae consequatur delectus dicta quos quis reiciendis?</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-bottom&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Consequuntur fugit labore expedita temporibus maxime, est eveniet adipisci repudiandae tempore et eos, provident libero ducimus necessitatibus reprehenderit obcaecati veniam quibusdam a.</p>
+
+                <div class="row double demo">
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                    <div class="medium-4 medium-bottom column">
+                        .medium-4 <strong>.medium-bottom</strong> .column
+                    </div>
+                    <div class="medium-4 column">
+                        .medium-4 .column
+                    </div>
+                </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 medium-bottom column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">baseline</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-baseline double demo">
                     <div class="medium-4 column">
                         .medium-4 .column <strong>inside</strong> .row .medium-baseline
@@ -409,8 +708,56 @@
                     </div>
                 </div>
 
-                <h4>*-stretch</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet odit veritatis harum quos suscipit? Sint facilis animi sed voluptatum aliquam a voluptate. Quam architecto provident sequi veniam hic, quisquam consectetur!</p>
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-baseline&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Libero molestias aperiam ullam ex minus, adipisci recusandae impedit magni ipsum. Eligendi non earum commodi harum alias, nesciunt reiciendis dolorum ab natus.</p>
+
+                <div class="row double demo">
+                    <div class="medium-3 column">
+                        .medium-3 .column
+                    </div>
+                    <div class="medium-3 medium-baseline column">
+                        <h3>.medium-3 <strong>.medium-baseline</strong> .column</h3>
+                    </div>
+                    <div class="medium-3 medium-baseline column">
+                        .medium-3 .column <strong>.medium-baseline</strong> .column
+                    </div>
+                    <div class="medium-3 column">
+                        .medium-3 .column
+                    </div>
+                </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 medium-baseline column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 medium-baseline column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <h4>{size}-<span class="main-color">stretch</span></h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Inventore, blanditiis, eaque! Nobis quod temporibus earum, distinctio provident saepe magnam nisi inventore. Ipsa nobis ducimus quasi a molestias excepturi blanditiis quaerat?</p>
                 <div class="row medium-stretch double demo">
                     <div class="medium-4 column">
                         .medium-4 .column <strong>inside</strong> .row .medium-stretch
@@ -422,6 +769,54 @@
                         .medium-4 .column <strong>inside</strong> .row .medium-stretch
                     </div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-stretch&quot;&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-4 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
+
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas accusantium iure nobis, fuga fugiat perferendis doloremque quisquam aut deserunt. Recusandae architecto eaque rerum quo ducimus, earum, et id corporis atque.</p>
+
+                <div class="row medium-top double demo">
+                    <div class="medium-3 column">
+                        .medium-3 .column
+                    </div>
+                    <div class="medium-3 medium-stretch column">
+                        .medium-3 <strong>.medium-stretch</strong> .column
+                    </div>
+                    <div class="medium-3 column">
+                        .medium-3 .column
+                    </div>
+                    <div class="medium-3 column">
+                        .medium-3 .column
+                    </div>
+                </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row medium-top&quot;&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 medium-stretch column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+    &lt;div class=&quot;medium-3 column&quot;&gt;
+        ...
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Vertical Aligment -->
 
                 <!-- Reverse -->
@@ -429,12 +824,32 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aspernatur voluptates eveniet laboriosam libero laborum delectus, unde quo cumque quia distinctio cum repudiandae sed quidem reprehenderit asperiores modi error minima.</p>
 
                 <div class="row small-reverse demo">
-                    <div class="small-2 columns">1</div>
-                    <div class="small-2 columns">2</div>
-                    <div class="small-2 columns">3</div>
-                    <div class="small-2 columns">4</div>
-                    <div class="small-2 columns">5</div>
+                    <div class="small-2 column">1</div>
+                    <div class="small-2 column">2</div>
+                    <div class="small-2 column">3</div>
+                    <div class="small-2 column">4</div>
+                    <div class="small-2 column">5</div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row small-reverse&quot;&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        1
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        2
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        3
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        4
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        5
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
 
                 <h3>Align left</h3>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sed nisi reprehenderit at officia modi veritatis architecto amet, reiciendis ducimus recusandae ipsa quia maxime alias libero, voluptates excepturi nulla iste magnam.</p>
@@ -445,6 +860,26 @@
                     <div class="small-2 columns">4</div>
                     <div class="small-2 columns">5</div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row small-reverse small-left&quot;&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        1
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        2
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        3
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        4
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        5
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Reverse -->
 
                 <!-- Oreder -->
@@ -452,12 +887,32 @@
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis aspernatur voluptates eveniet laboriosam libero laborum delectus, unde quo cumque quia distinctio cum repudiandae sed quidem reprehenderit asperiores modi error minima.</p>
 
                 <div class="row demo">
-                    <div class="small-2 small-last columns">1 <strong>with</strong> .small-last</div>
-                    <div class="small-2 columns">2</div>
-                    <div class="small-2 columns">3</div>
-                    <div class="small-2 small-first columns">4 <strong>with</strong> .small-first</div>
-                    <div class="small-2 columns">5</div>
+                    <div class="small-2 small-last column">1 <strong>with</strong> .small-last</div>
+                    <div class="small-2 column">2</div>
+                    <div class="small-2 column">3</div>
+                    <div class="small-2 small-first column">4 <strong>with</strong> .small-first</div>
+                    <div class="small-2 column">5</div>
                 </div>
+
+<pre class="prettyprint ">
+&lt;div class=&quot;row demo&quot;&gt;
+    &lt;div class=&quot;small-2 small-last column&quot;&gt;
+        1
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        2
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        3
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 small-first column&quot;&gt;
+        4
+    &lt;/div&gt;
+    &lt;div class=&quot;small-2 column&quot;&gt;
+        5
+    &lt;/div&gt;
+&lt;/div&gt;
+</pre>
                 <!-- /Oreder -->
             </div>
 
@@ -486,6 +941,12 @@
     <br>
     <br>
     <br>
+    <script src="prettify.js"></script>
+    <script>
+    (function () {
+        window.prettyPrint && prettyPrint();
+    })();
+    </script>
 
 
 

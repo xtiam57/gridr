@@ -21,8 +21,15 @@ body p, body li {
     background-color: #eee; }
 .demo.row {
   background-color: #f40033; }
+  .demo.row .row {
+    border: solid 3px #f40033; }
+    .demo.row .row .row {
+      border: solid 6px #f40033; }
   .demo.row.double {
     min-height: 100px; }
+
+.main-color {
+  color: #f40033; }
 
 code {
   padding: 2px 4px;
@@ -75,6 +82,9 @@ a {
     text-decoration: underline; }
   a img {
     border: none; }
+
+pre {
+  font-size: 14px; }
 
 /* line 4, ../scss/simple/_tables.scss */
 .table {

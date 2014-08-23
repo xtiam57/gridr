@@ -33,10 +33,20 @@ body {
 
   &.row {
     background-color: $main-color;
+    .row {
+      border: solid 3px $main-color;
+      .row {
+        border: solid 6px $main-color;
+      }
+    }
     &.double {
       min-height: 100px;
     }
   }
+}
+
+.main-color {
+  color: $main-color;
 }
 
 code {
@@ -109,6 +119,10 @@ a {
     text-decoration: underline;
   }
   img { border:none; }
+}
+
+pre {
+  font-size: 14px;
 }
 
 
