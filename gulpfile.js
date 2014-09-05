@@ -1,7 +1,7 @@
 var config = {
 
-  SRC_PATH     : './src',
-  DIST_PATH    : './dist',
+  SRC_PATH     : 'src',
+  DIST_PATH    : 'dist',
 
 
   ENV          : 'development',
