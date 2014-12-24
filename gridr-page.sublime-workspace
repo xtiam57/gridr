@@ -1,0 +1,1908 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"EV",
+				"ENV"
+			],
+			[
+				"sel",
+				"selfinvoking	self-invoking"
+			],
+			[
+				"cont",
+				"container-fluid"
+			],
+			[
+				"ma",
+				"mah	max-height"
+			],
+			[
+				"dis",
+				"DIST_PATH"
+			],
+			[
+				"src",
+				"SRC_PATH"
+			],
+			[
+				"HTM",
+				"HTML_DIST"
+			],
+			[
+				"l",
+				"log	console.log()"
+			],
+			[
+				"IMA",
+				"IMAGES_SRC"
+			],
+			[
+				"LESS",
+				"LESS_WATCH"
+			],
+			[
+				"LE",
+				"LESS_PATH"
+			],
+			[
+				"A",
+				"APP_DIST"
+			],
+			[
+				"APP",
+				"APP_DIST"
+			],
+			[
+				"AP",
+				"APP_SRC"
+			],
+			[
+				"func",
+				"function"
+			],
+			[
+				"scr",
+				"script	Tag"
+			],
+			[
+				"dir",
+				"directivelong	Angular.js"
+			],
+			[
+				"html",
+				"html5	Base"
+			],
+			[
+				"fun",
+				"function"
+			],
+			[
+				"re",
+				"require"
+			],
+			[
+				"con",
+				"controller	Angular.js"
+			],
+			[
+				"an",
+				"angular	Angular.js"
+			],
+			[
+				"for",
+				"for	for (…) {…}"
+			],
+			[
+				"actti",
+				"activity_list"
+			],
+			[
+				"acy",
+				"activity_list"
+			],
+			[
+				"sec",
+				"section_id"
+			],
+			[
+				"geal",
+				"getAllWhere"
+			],
+			[
+				"casi",
+				"casing"
+			],
+			[
+				"forma",
+				"formation"
+			],
+			[
+				"Dail",
+				"DailyCostModel"
+			],
+			[
+				"getal",
+				"getAllWhere"
+			],
+			[
+				"Wll",
+				"WellboreModel"
+			],
+			[
+				"get",
+				"getAll"
+			],
+			[
+				"Surve",
+				"SurveyStationModel"
+			],
+			[
+				"well",
+				"wellbore_id"
+			],
+			[
+				"surve",
+				"survey"
+			],
+			[
+				"xedi",
+				"xeditnumber	XEditable Number"
+			],
+			[
+				"fail",
+				"failure"
+			],
+			[
+				"DD",
+				"DDRHelper"
+			],
+			[
+				"casin",
+				"casingsCatalog"
+			],
+			[
+				"motroc",
+				"motorsCatalog"
+			],
+			[
+				"stab",
+				"stabilizerCatalog"
+			],
+			[
+				"job_",
+				"job_number"
+			],
+			[
+				"sync",
+				"syncStructure"
+			],
+			[
+				"DDR",
+				"DDRHelper"
+			],
+			[
+				"setst",
+				"setStructure"
+			],
+			[
+				"Bitbeas",
+				"BitBearingSealModel"
+			],
+			[
+				"plbitbea",
+				"plBitBearingSeals"
+			],
+			[
+				"Bitbea",
+				"BitBearingStyle"
+			],
+			[
+				"plbitbe",
+				"plBitBearingStyels"
+			],
+			[
+				"Bitsi",
+				"BitSizeModel"
+			],
+			[
+				"Bitma",
+				"BitManufacturerModel"
+			],
+			[
+				"Stab",
+				"StablizerFinOuterDiameterModel"
+			],
+			[
+				"plstabi",
+				"plStabilizerFinOds"
+			],
+			[
+				"Stabt",
+				"StabTypeModel"
+			],
+			[
+				"Motromo",
+				"MotorModelModel"
+			],
+			[
+				"plmotrom",
+				"plMotorModels"
+			],
+			[
+				"Motrostab",
+				"MotorStabOuterDiameterModel"
+			],
+			[
+				"Motorpa",
+				"MotorPadOuterDiameterModel"
+			],
+			[
+				"Motorma",
+				"MotorManufacturerModel"
+			],
+			[
+				"COst",
+				"CostUnitModel"
+			],
+			[
+				"plmw",
+				"plMwdManufacturer"
+			],
+			[
+				"Connect",
+				"ConnectionSizeModel"
+			],
+			[
+				"plcon",
+				"plConnectionTypes"
+			],
+			[
+				"plbha",
+				"plBhaComponentOds"
+			],
+			[
+				"Bhaco",
+				"BhaComponentIdModel"
+			],
+			[
+				"plbhacom",
+				"plBhaComponentIds"
+			],
+			[
+				"Bito",
+				"BitOuterDiameterModel"
+			],
+			[
+				"plBi",
+				"plBitOds"
+			],
+			[
+				"Welb",
+				"WellboreObjectiveModel"
+			],
+			[
+				"plwel",
+				"plWellboreObjectives"
+			],
+			[
+				"Wel",
+				"WellboreShapeModel"
+			],
+			[
+				"Wellb",
+				"WellboreNameModel"
+			],
+			[
+				"Sectinm",
+				"SectionNameModel"
+			],
+			[
+				"Reaso",
+				"ReasonPoohModel"
+			],
+			[
+				"Phasena",
+				"PhaseNameModel"
+			],
+			[
+				"plMwd",
+				"plMWDCompanies"
+			],
+			[
+				"Mudco",
+				"MudCompanyModel"
+			],
+			[
+				"Direc",
+				"DirectionalCompanyModel"
+			],
+			[
+				"Act",
+				"ActivityCodeModel"
+			],
+			[
+				"jo",
+				"job"
+			],
+			[
+				"jobnu",
+				"jobNumber"
+			],
+			[
+				"Lwd",
+				"LwdModel"
+			],
+			[
+				"Bhac",
+				"BhaComponentFailureModel"
+			],
+			[
+				"bhacom",
+				"BhaComponentModel"
+			],
+			[
+				"Surves",
+				"SurveyStationModel"
+			],
+			[
+				"Pum",
+				"PumpSettingModel"
+			],
+			[
+				"res",
+				"resolve"
+			],
+			[
+				"job",
+				"job_number"
+			],
+			[
+				"ngcl",
+				"ng-class	AngularJS"
+			],
+			[
+				"ngre",
+				"ng-repeat	AngularJS"
+			],
+			[
+				"per",
+				"personnel"
+			],
+			[
+				"remo",
+				"remove"
+			],
+			[
+				"sycn",
+				"syncStatus"
+			],
+			[
+				"syc",
+				"sync_status"
+			],
+			[
+				"p",
+				"prototype"
+			],
+			[
+				"Elo",
+				"EloquentProvider"
+			],
+			[
+				"getA",
+				"getAll"
+			],
+			[
+				"Sur",
+				"SurveyTypeModel"
+			],
+			[
+				"Fail",
+				"FailureTypeMolde"
+			],
+			[
+				"Issu",
+				"IssueTypeModel"
+			],
+			[
+				"Bha",
+				"BhaComponentFailureModel"
+			],
+			[
+				"bhaco",
+				"bhaComponent_id"
+			],
+			[
+				"BhaComponentFailureMo",
+				"BhaComponentFailureModel"
+			],
+			[
+				"bha",
+				"BhaComponentFailure"
+			],
+			[
+				"act",
+				"activityId"
+			],
+			[
+				"bhaCompo",
+				"openBhaComponentFailureModal"
+			],
+			[
+				"comp",
+				"componente"
+			],
+			[
+				"geta",
+				"getAll"
+			],
+			[
+				"Bham",
+				"BhaModel"
+			],
+			[
+				"Bh",
+				"BhaComponentModel"
+			],
+			[
+				"ac",
+				"activity_id"
+			],
+			[
+				"mot",
+				"motor"
+			],
+			[
+				"rem",
+				"remove"
+			],
+			[
+				"getAllW",
+				"getAllWhere"
+			],
+			[
+				"all",
+				"allIssues"
+			],
+			[
+				"Dep",
+				"DepthIssueModel"
+			],
+			[
+				"WEllbo",
+				"WellboreModel"
+			],
+			[
+				"Su",
+				"SurveyStationModel"
+			],
+			[
+				"Sue",
+				"SurveyModel"
+			],
+			[
+				"Perso",
+				"PersonnelModel"
+			],
+			[
+				"Motro",
+				"MotorStallModel"
+			],
+			[
+				"Job",
+				"JobModel"
+			],
+			[
+				"From",
+				"FormationModel"
+			],
+			[
+				"Casi",
+				"CasingModel"
+			],
+			[
+				"Acti",
+				"ActivityModel"
+			],
+			[
+				"im",
+				"importContent"
+			],
+			[
+				"coo",
+				"coordinator"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 400.0,
+		"selected_items":
+		[
+			[
+				"gulp",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"add",
+				"Git: Add..."
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"gulpki",
+				"Gulp: Kill running tasks"
+			],
+			[
+				"stat",
+				"Git: Status"
+			],
+			[
+				"comi",
+				"Git: Commit"
+			],
+			[
+				"bol",
+				"Snippet: bold"
+			],
+			[
+				"new tag",
+				"Git: New Tag"
+			],
+			[
+				"push",
+				"Git: Push Tags"
+			],
+			[
+				"pusht",
+				"Git: Push Tags"
+			],
+			[
+				"new",
+				"Git: New Tag"
+			],
+			[
+				"upper",
+				"Convert Case: Upper Case"
+			],
+			[
+				"pull",
+				"Git: Pull"
+			],
+			[
+				"com",
+				"Git: Commit"
+			],
+			[
+				"todo",
+				"TodoReview: Project and Open Files"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"htmlprettify",
+				"HTMLPrettify: Set `node` Path"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"blame",
+				"Git: Blame"
+			],
+			[
+				"plain",
+				"Set Syntax: Plain Text"
+			],
+			[
+				"pus",
+				"Git: Push"
+			],
+			[
+				"bold",
+				"Snippet: bold"
+			],
+			[
+				"new ta",
+				"Git: New Tag"
+			],
+			[
+				"show",
+				"Git: Show Tags"
+			],
+			[
+				"commi",
+				"Git: Commit"
+			],
+			[
+				"upperc",
+				"Convert Case: Upper Case"
+			],
+			[
+				"upers",
+				"Convert Case: Upper Case"
+			],
+			[
+				"diff",
+				"Git: Diff All Files"
+			],
+			[
+				"dif",
+				"Git: Diff All Files (Ignore Whitespace)"
+			],
+			[
+				"git: ",
+				"Git: Diff All Files"
+			],
+			[
+				"push tag",
+				"Git: Push Tags"
+			],
+			[
+				"newt",
+				"Git: New Tag"
+			],
+			[
+				"show tag",
+				"Git: Show Tags"
+			],
+			[
+				"java",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"rese",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"reset",
+				"Git: Reset (unstage) Current File"
+			],
+			[
+				"upp",
+				"Convert Case: Upper Case"
+			],
+			[
+				"uppe",
+				"Convert Case: Upper Case"
+			],
+			[
+				"status",
+				"Git: Status"
+			],
+			[
+				"git reset",
+				"Git: Reset (unstage) All"
+			],
+			[
+				"COMI",
+				"Git: Commit"
+			],
+			[
+				"ADD",
+				"Git: Add..."
+			],
+			[
+				"newta",
+				"Git: New Tag"
+			],
+			[
+				"push ",
+				"Git: Push Tags"
+			],
+			[
+				"new ",
+				"Git: New Tag"
+			],
+			[
+				"showta",
+				"Git: Show Tags"
+			],
+			[
+				"tag",
+				"Git: Show Tags"
+			],
+			[
+				"sta",
+				"Git: Status"
+			],
+			[
+				"puh",
+				"Git: Push"
+			],
+			[
+				"comm",
+				"Git: Commit"
+			],
+			[
+				"javas",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"jav",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"javasc",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"log",
+				"Git: Log All"
+			],
+			[
+				"PULL",
+				"Git: Pull"
+			],
+			[
+				"lowe",
+				"Convert Case: Lower Case"
+			],
+			[
+				"lo",
+				"Convert Case: Lower Case"
+			],
+			[
+				"pu",
+				"Git: Push"
+			],
+			[
+				"cmi",
+				"Git: Commit"
+			],
+			[
+				"remo",
+				"Package Control: Remove Package"
+			],
+			[
+				"ush",
+				"Git: Push"
+			],
+			[
+				"close",
+				"File: Close All"
+			],
+			[
+				"blo",
+				"DocBlockr: Decorate line comment"
+			],
+			[
+				"ad",
+				"Git: Add..."
+			],
+			[
+				"lower",
+				"Convert Case: Lower Case"
+			],
+			[
+				"ull",
+				"SublimeLinter: Lint This View"
+			],
+			[
+				"new t",
+				"Git: New Tag"
+			],
+			[
+				"p",
+				"Git: Pull"
+			],
+			[
+				"git:",
+				"Git: Amend Commit"
+			],
+			[
+				"json",
+				"Set Syntax: JSON"
+			],
+			[
+				"coi",
+				"Git: Commit"
+			],
+			[
+				"pul",
+				"Git: Pull"
+			],
+			[
+				"ps",
+				"Git: Push"
+			],
+			[
+				"dis",
+				"Package Control: Disable Package"
+			],
+			[
+				"ena",
+				"Package Control: Enable Package"
+			],
+			[
+				"lis",
+				"Package Control: List Packages"
+			],
+			[
+				"enab",
+				"Package Control: Enable Package"
+			],
+			[
+				"bod",
+				"Snippet: bold"
+			],
+			[
+				"puhs",
+				"Git: Push"
+			],
+			[
+				"psh",
+				"Git: Push"
+			],
+			[
+				"list",
+				"Package Control: List Packages"
+			],
+			[
+				"COM",
+				"Git: Commit"
+			],
+			[
+				"gists",
+				"Gist: Create Public Gist"
+			],
+			[
+				"gist",
+				"Gist: Create Public Gist"
+			],
+			[
+				"a",
+				"Git: Add..."
+			],
+			[
+				"low",
+				"Convert Case: Lower Case"
+			],
+			[
+				"gis",
+				"Gist: Open Gist in Browser"
+			],
+			[
+				"loremp",
+				"Snippet: Lorempixel"
+			],
+			[
+				"ope",
+				"Gist: Open Gist"
+			],
+			[
+				"git",
+				"Git: Status"
+			],
+			[
+				"tasks",
+				"Tasks: New document"
+			],
+			[
+				"task",
+				"Tasks: New document"
+			],
+			[
+				"git: po",
+				"Git: Stash Pop"
+			],
+			[
+				"co",
+				"Git: Commit"
+			],
+			[
+				"aligme",
+				"Preferences: Alignment File Settings – User"
+			],
+			[
+				"alig",
+				"Preferences: Alignment Key Bindings – Default"
+			],
+			[
+				"Package Control: is",
+				"Package Control: Install Package"
+			],
+			[
+				"psuh",
+				"Git: Push"
+			],
+			[
+				"LOWE",
+				"Convert Case: Lower Case"
+			],
+			[
+				"Package Control: ",
+				"Package Control: List Packages"
+			],
+			[
+				"disa",
+				"Package Control: Disable Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"linter",
+				"SublimeLinter: Choose Lint Mode"
+			],
+			[
+				"fetch",
+				"Fetch: Manage"
+			]
+		],
+		"width": 536.0
+	},
+	"console":
+	{
+		"height": 309.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"expanded_folders":
+	[
+		"/D/Documents/Projects/gridr-page"
+	],
+	"file_history":
+	[
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/_settings.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/_visibility.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/_flexgrid.less",
+		"/D/Documents/Projects/gridr/dist/css/gridr.css",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr.less",
+		"/D/Documents/Projects/gridr/src/index.html",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/mixins/_flexgrid.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/_utilities.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/_mixins.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/mixins/_clearfix.less",
+		"/D/Documents/Projects/gridr/src/styles/less/gridr/mixins/_visibility.less",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/src/less/theme/grid.less",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/src/less/theme/variables.less",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/src/less/style.less",
+		"/D/Documents/Projects/gridr/src/styles/less/style.less",
+		"/D/Documents/Projects/gridr/gulpfile.js",
+		"/D/Documents/Projects/gridr/src/styles/less/normalize.less",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_settings.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_utilities.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_visibility.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/mixins/_visibility.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_flexgrid.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/mixins/_flexgrid.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/style.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_mixins.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/mixins/_rem.scss",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/src/less/theme/utilities.less",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/mixins/_em.scss",
+		"/D/Documents/Projects/gridr/package.json",
+		"/D/Documents/Projects/gridr/.sublime-gulp-tmp.js",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/gulpfile.js",
+		"/D/Documents/Projects/gridr/src/styles/gridr.scss",
+		"/D/Documents/Projects/addsoftware/frontends/report-maker/package.json",
+		"/D/Documents/Projects/gridr/src/styles/style.scss",
+		"/D/Documents/Projects/gridr/src/prettify.css",
+		"/D/Documents/Projects/gridr/src/styles/gridr/_settings.scss",
+		"/D/Documents/Projects/gridr/src/styles/gridr/_flexgrid.scss",
+		"/D/Documents/Projects/gridr/src/styles/gridr/mixins/_flexgrid.scss",
+		"/C/Users/Christiam/Desktop/index.html",
+		"/D/Documents/Projects/gridr/index.html",
+		"/D/Documents/Projects/gridr/src/styles/gridr/_mixins.scss",
+		"/D/Documents/Projects/gridr/src/styles/gridr/mixins/_cover.scss",
+		"/C/Users/Christiam/Desktop/export_DDCO-140514_22Aug2014_1222 (1).json",
+		"/D/Documents/Projects/gridr/src/styles/gridr/_utilities.scss",
+		"/D/Documents/Projects/gridr/dist/css/normalize.css",
+		"/D/Documents/Projects/gridr/src/styles/gridr/_globals.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/vendors.scss",
+		"/D/Documents/Projects/simple/scss/simple/mixins/_cover.scss",
+		"/D/Documents/Projects/gridr/.sass-cache/eb2486daf81d2d98db42c5bedeec395ad6802474/_flexgrid.scssc",
+		"/D/Documents/Projects/gridr/.sass-cache/73b31e92d7440de43ea9ff85000b02f967841e49/_flexbox.scssc",
+		"/D/Documents/Projects/gridr/.sass-cache/2dd75d0bac9aefffb612369369bc9c1bc1557216/_flexgrid.scssc",
+		"/D/Documents/Projects/gridr/.sass-cache/1e1ed323b16675bf5f45fe8d09485ae830a141fe/_core.scssc",
+		"/D/Documents/Projects/gridr/node_modules/gulp-ng-annotate/node_modules/.bin/ng-annotate",
+		"/D/Documents/Projects/gridr/.gitignore",
+		"/D/Documents/Projects/gridr/.editorconfig",
+		"/D/Documents/Projects/simple/scss/simple/_settings.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/gridr/_globals.scss",
+		"/D/Documents/Projects/simple/scss/simple/_scaffolding.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/normalize/normalize.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/theme/_utilities.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/theme/_mixins.scss",
+		"/D/Documents/Projects/gridr/src/styles/sass/theme/variables.scss",
+		"/D/Documents/Projects/simple/scss/simple.scss",
+		"/D/Documents/Projects/scaffolar/README.md",
+		"/D/Documents/Projects/scaffolar/gulpfile.js",
+		"/D/Documents/Projects/scaffolar/dist/js/app.js",
+		"/D/Documents/Projects/scaffolar/src/app/services/home_service.js",
+		"/D/Documents/Projects/scaffolar/src/app/config/router.js",
+		"/D/Documents/Projects/scaffolar/package.json",
+		"/D/Documents/Projects/scaffolar/src/app/controllers/home_controller.js",
+		"/D/Documents/Projects/scaffolar/src/styles/less/theme/variables.less",
+		"/D/Documents/Projects/scaffolar/dist/index.html",
+		"/D/Documents/Projects/scaffolar/src/assets/files/.gitkeep",
+		"/D/Documents/Projects/scaffolar/dist/js/underscore/underscore.min.js",
+		"/D/Documents/Projects/scaffolar/src/index.html",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/font-awesome/_variables.scss",
+		"/D/Documents/Projects/scaffolar/src/styles/less/font-awesome/variables.less",
+		"/D/Documents/Projects/scaffolar/src/styles/less/vendors.less",
+		"/D/Documents/Projects/scaffolar/src/vendors/underscore/underscore.js",
+		"/D/Documents/Projects/scaffolar/src/vendors/bootstrap/bootstrap.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp/lib/completion.js",
+		"/D/Documents/Projects/scaffolar/node_modules/browser-sync/lib/cli/cli-options.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-ng-annotate/COPYING",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/vendors.scss",
+		"/D/Documents/Projects/scaffolar/src/templates/home.tpl.html",
+		"/D/Documents/Projects/scaffolar/src/app/config/run.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-less/node_modules/less/test/less/errors/add-mixed-units.less",
+		"/D/Documents/Projects/scaffolar/src/app/directives/anchor_directive.js",
+		"/D/Documents/Projects/scaffolar/src/app/app.js",
+		"/D/Documents/Projects/scaffolar/src/app/filter/conditional_filter.js",
+		"/D/Documents/Projects/scaffolar/src/app/services/page_service.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-autoprefixer/node_modules/autoprefixer/node_modules/caniuse-db/features-json/png-alpha.json",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-less/node_modules/less/test/browser/runner-relative-urls-options.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-less/node_modules/less/test/browser/runner-browser-options.js",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/theme/variables.scss",
+		"/D/Documents/Projects/scaffolar/src/styles/less/style.less",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/style.scss",
+		"/D/Documents/Projects/scaffolar/src/assets/images/.gitkeep",
+		"/D/Documents/Projects/scaffolar/src/assets/icons/.gitkeep",
+		"/D/Documents/Projects/scaffolar/dist/css/vendors.css",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/variables.scss",
+		"/D/Documents/Projects/scaffolar/src/app/directives/home_directive.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp/node_modules/gulp-util/lib/isNull.js",
+		"/D/Documents/Projects/scaffolar/.gitignore",
+		"/D/Documents/Projects/scaffolar/dist/css/style.css",
+		"/D/Documents/Projects/scaffolar/.sass-cache/cba02664c284356e58290500d88c995862002929/style.scssc",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-ng-annotate/node_modules/ng-annotate/node_modules/simple-fmt/test/simple-fmt-tests.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp/node_modules/chalk/node_modules/.bin/strip-ansi",
+		"/D/Documents/Projects/scaffolar/node_modules/browser-sync/node_modules/http-proxy/examples/http/standalone-proxy.js",
+		"/D/Documents/Projects/scaffolar/node_modules/browser-sync/node_modules/cl-strings/node_modules/chalk/node_modules/ansi-styles/ansi-styles.js",
+		"/D/Documents/Projects/scaffolar/scaffolar.sublime-project",
+		"/D/Documents/Projects/scaffolar/node_modules/browser-sync/lib/hooks.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp/node_modules/semver/head.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-rename/test/fixtures/hello.txt",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-connect/node_modules/connect/examples/helloworld.js",
+		"/D/Documents/Projects/scaffolar/node_modules/gulp-notify/node_modules/node-notifier/node_modules/shellwords/spec/shellwords_spec.coffee",
+		"/D/Documents/Projects/scaffolar/src/app/filter/home_filter.js",
+		"/D/Documents/Projects/addsoftware/frontends/console/src/app/filters/capitalize_filter.js",
+		"/D/Documents/Projects/scaffolar/src/app/config/settings.js",
+		"/C/Users/Christiam/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/D/Documents/Projects/addsoftware/frontends/console/src/index.html",
+		"/D/Documents/Projects/scaffolar/src/app/services/.gitkeep",
+		"/D/Documents/Projects/scaffolar/src/js/app.js",
+		"/D/Documents/Projects/scaffolar/src/app/filter/.gitkeep",
+		"/D/Documents/Projects/scaffolar/src/app/directives/.gitkeep",
+		"/D/Documents/Projects/scaffolar/src/styles/sass/.gitkeep",
+		"/D/Documents/Projects/scaffolar/src/styles/less/.gitkeep"
+	],
+	"find":
+	{
+		"height": 40.0
+	},
+	"find_in_files":
+	{
+		"height": 90.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"small",
+			"$",
+			"@include ",
+			"@column-gutter / 2",
+			"@column-gutter / -2",
+			"@rem",
+			"@size: ",
+			"@include ",
+			"@{screen}",
+			"\"",
+			"{",
+			"\"",
+			"@include ",
+			"rem",
+			"rem(@column-gutter / 2)",
+			"column-gutter",
+			"#{@",
+			"#{",
+			"$",
+			"@grid-columns",
+			";",
+			"rem(",
+			"#{@",
+			"$",
+			"!default",
+			"include",
+			"import",
+			"!default",
+			"$",
+			"_",
+			"#{@",
+			"$",
+			"#{@",
+			"$",
+			"!default",
+			"$",
+			"include",
+			"includee",
+			"xlarge",
+			"large",
+			"medium",
+			"small",
+			"visible",
+			"block",
+			"-block",
+			"inv",
+			"invisi",
+			"responsive-visibility",
+			"responsive-invisibility",
+			"em",
+			"gulpif",
+			"high",
+			".",
+			"Vertical Aligment",
+			"<strong>inside</strong> .row .medium-stretch",
+			"4",
+			"<strong>inside</strong> .row .medium-baseline",
+			" <strong>inside</strong> .row .medium-top",
+			" <strong>inside</strong> .row .medium-bottom",
+			"columns",
+			".",
+			"        .",
+			".",
+			".medium-3 .column &lt;strong&gt;inside&lt;/strong&gt; .row .medium-center",
+			"columns",
+			".",
+			"columns",
+			"demo",
+			".",
+			"/div>",
+			" \">",
+			"demo",
+			"$anchor-font-color",
+			"small-2 .medium-8 .large-4 .xlarge-6 .columns",
+			"percentage",
+			"rem(",
+			"text",
+			" class=\"text-center\"",
+			")",
+			"<small></small>",
+			"and",
+			"center",
+			"small-2 medium-8 large-4 xlarge-6 ",
+			"// ",
+			"container-",
+			"{\n  @",
+			"{",
+			"self",
+			"important",
+			"items",
+			";",
+			".raw",
+			"row",
+			"scroll",
+			"strech",
+			"up",
+			"h4",
+			"2",
+			"even",
+			"h2",
+			"baseline",
+			"middle",
+			"top",
+			"3",
+			"around",
+			"justify",
+			"small-4",
+			"small",
+			"0",
+			"col-md",
+			"medium",
+			"debug",
+			"simple",
+			"config.PREPROCESSOR",
+			"./src",
+			"./dist",
+			"HTML_DIST",
+			"./src",
+			"'./src",
+			"run",
+			"'dist/",
+			"'src/",
+			"src/",
+			"HTML_WATCH",
+			"FONTS_",
+			"ICONS_",
+			"HTML_WATCH",
+			"APP_PATH"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"HelperService.generateGUID()",
+			"fa-plus",
+			"function",
+			"div"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 27.0
+	},
+	"input":
+	{
+		"height": 35.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.git":
+	{
+		"height": 285.0
+	},
+	"output.gulp_output":
+	{
+		"height": 137.0
+	},
+	"output.sftp":
+	{
+		"height": 0.0
+	},
+	"project": "gridr-page.sublime-project",
+	"replace":
+	{
+		"height": 50.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"gul",
+				"gulpfile.js"
+			],
+			[
+				"_fel",
+				"src\\styles\\sass\\gridr\\mixins\\_flexgrid.scss"
+			],
+			[
+				"pas",
+				"src\\app\\services\\page_service.js"
+			],
+			[
+				"run",
+				"src\\app\\config\\run.js"
+			],
+			[
+				"router",
+				"src\\app\\config\\router.js"
+			],
+			[
+				"index",
+				"src\\index.html"
+			],
+			[
+				"homecon",
+				"src\\app\\controllers\\home_controller.js"
+			],
+			[
+				"homedir",
+				"src\\app\\directives\\home_directive.js"
+			],
+			[
+				"style",
+				"src\\styles\\sass\\style.scss"
+			],
+			[
+				"homeserv",
+				"src\\app\\services\\home_service.js"
+			],
+			[
+				"bhacommode",
+				"src\\app\\services\\ddr\\models\\bhaComponent_model.js"
+			],
+			[
+				"bitstpl",
+				"src\\views\\modals\\ddr\\bitDetails.tpl.html"
+			],
+			[
+				"bhas",
+				"src\\views\\modals\\ddr\\bhas.tpl.html"
+			],
+			[
+				"lwds",
+				"src\\views\\modals\\ddr\\lwds.tpl.html"
+			],
+			[
+				"mwd",
+				"src\\views\\modals\\ddr\\mwds.tpl.html"
+			],
+			[
+				"daily",
+				"src\\views\\reports\\daily.tpl.html"
+			],
+			[
+				"personne",
+				"src\\app\\services\\ddr\\models\\personnel_model.js"
+			],
+			[
+				"forma",
+				"src\\views\\modals\\ddr\\formations.tpl.html"
+			],
+			[
+				"phase",
+				"src\\views\\modals\\ddr\\phases.tpl.html"
+			],
+			[
+				"section",
+				"src\\views\\modals\\ddr\\sections.tpl.html"
+			],
+			[
+				"dail",
+				"src\\views\\reports\\ddr\\daily.tpl.html"
+			],
+			[
+				"dailytpl",
+				"src\\views\\reports\\daily.tpl.html"
+			],
+			[
+				"ddrtpl",
+				"src\\views\\jobs\\ddr.tpl.html"
+			],
+			[
+				"issues",
+				"src\\app\\controllers\\ddr\\modals\\issues_controller.js"
+			],
+			[
+				"notfou",
+				"src\\views\\directives\\notFound.tpl.html"
+			],
+			[
+				"loader",
+				"src\\app\\services\\ddr\\ddrLoader_service.js"
+			],
+			[
+				"activitymode",
+				"src\\app\\services\\ddr\\models\\activity_model.js"
+			],
+			[
+				"ddrloade",
+				"src\\app\\services\\ddr\\ddrLoader_service.js"
+			],
+			[
+				"offline",
+				"src\\app\\offline.js"
+			],
+			[
+				"dailycosnco",
+				"src\\app\\controllers\\ddr\\modals\\dailyCosts_controller.js"
+			],
+			[
+				"pickli",
+				"src\\app\\services\\ddr\\models\\picklists.js"
+			],
+			[
+				"ddrhelp",
+				"src\\app\\services\\ddr\\ddrHelper_service.js"
+			],
+			[
+				"drillingpara",
+				"src\\views\\modals\\ddr\\drillingParameters.tpl.html"
+			],
+			[
+				"well",
+				"src\\app\\controllers\\ddr\\modals\\wellbores_controller.js"
+			],
+			[
+				"casingscon",
+				"src\\app\\controllers\\ddr\\modals\\casings_controller.js"
+			],
+			[
+				"casinsgtpl",
+				"src\\views\\modals\\ddr\\casings.tpl.html"
+			],
+			[
+				"dailycosts",
+				"src\\views\\modals\\ddr\\dailyCosts.tpl.html"
+			],
+			[
+				"dailycos",
+				"src\\views\\modals\\create\\dailyCosts.tpl.html"
+			],
+			[
+				"ddrloa",
+				"src\\app\\services\\ddr\\ddrLoader_service.js"
+			],
+			[
+				"pump",
+				"src\\views\\modals\\ddr\\pumps.tpl.html"
+			],
+			[
+				"wellbore",
+				"src\\views\\modals\\ddr\\wellbores.tpl.html"
+			],
+			[
+				"muds",
+				"src\\views\\modals\\ddr\\muds.tpl.html"
+			],
+			[
+				"formation",
+				"src\\views\\modals\\ddr\\formations.tpl.html"
+			],
+			[
+				"phasescon",
+				"src\\app\\controllers\\ddr\\modals\\phases_controller.js"
+			],
+			[
+				"activimode",
+				"src\\app\\services\\ddr\\models\\activity_model.js"
+			],
+			[
+				"sectioncon",
+				"src\\app\\controllers\\ddr\\modals\\sections_controller.js"
+			],
+			[
+				"ddrcon",
+				"src\\app\\controllers\\ddr\\ddr_controller.js"
+			],
+			[
+				"surveystat",
+				"src\\app\\services\\ddr\\models\\surveyStation_model.js"
+			],
+			[
+				"surv",
+				"src\\app\\services\\ddr\\models\\survey_model.js"
+			],
+			[
+				"wellborescon",
+				"src\\app\\controllers\\ddr\\modals\\wellbores_controller.js"
+			],
+			[
+				"mudst",
+				"src\\views\\modals\\ddr\\muds.tpl.html"
+			],
+			[
+				"mudmod",
+				"src\\app\\services\\ddr\\models\\mud_model.js"
+			],
+			[
+				"pumpsetin",
+				"src\\app\\services\\ddr\\models\\pumpSetting_model.js"
+			],
+			[
+				"pumpst",
+				"src\\views\\modals\\ddr\\pumps.tpl.html"
+			],
+			[
+				"bhafai",
+				"src\\app\\controllers\\ddr\\modals\\bhaComponentFailures_controller.js"
+			],
+			[
+				"local",
+				"src\\app\\services\\localStorage_service.js"
+			],
+			[
+				"bhasc",
+				"src\\app\\controllers\\ddr\\modals\\bhas_controller.js"
+			],
+			[
+				"helperse",
+				"src\\app\\services\\helper_service.js"
+			],
+			[
+				"ddrco",
+				"src\\app\\controllers\\ddr\\ddr_controller.js"
+			],
+			[
+				"bhacomm",
+				"src\\app\\services\\ddr\\models\\bhaComponent_model.js"
+			],
+			[
+				"lwdmode",
+				"src\\app\\services\\ddr\\models\\lwd_model.js"
+			],
+			[
+				"mwdm",
+				"src\\app\\services\\ddr\\models\\mwd_model.js"
+			],
+			[
+				"ddrhelpe",
+				"src\\app\\services\\ddr\\ddrHelper_service.js"
+			],
+			[
+				"synctpl",
+				"src\\views\\modals\\ddr\\sync.tpl.html"
+			],
+			[
+				"cleantpl",
+				"src\\views\\modals\\ddr\\clean.tpl.html"
+			],
+			[
+				"ddrtp",
+				"src\\views\\jobs\\ddr.tpl.html"
+			],
+			[
+				"constan",
+				"src\\app\\constants.js"
+			],
+			[
+				"conta",
+				"node_modules\\grunt-docular\\node_modules\\docular\\node_modules\\q-io\\spec\\fs\\contains-spec.js"
+			],
+			[
+				"ddrsy",
+				"src\\app\\services\\ddr\\ddrSync_service.js"
+			],
+			[
+				"ddrlo",
+				"src\\app\\services\\ddr\\ddrLoader_service.js"
+			],
+			[
+				"ddrsyn",
+				"src\\app\\services\\ddr\\ddrSync_service.js"
+			],
+			[
+				"newdil",
+				"src\\views\\modals\\ddr\\newDaily.tpl.html"
+			],
+			[
+				"index.t",
+				"src\\index.html"
+			],
+			[
+				"index.hm",
+				"src\\index.html"
+			],
+			[
+				"dailydatam",
+				"src\\app\\services\\ddr\\models\\dailyData_model.js"
+			],
+			[
+				"postser",
+				"src\\app\\services\\post_service.js"
+			],
+			[
+				"syncse",
+				"src\\app\\services\\ddr\\ddrSync_service.js"
+			],
+			[
+				"ddrhep",
+				"src\\app\\services\\ddr\\ddrHelper_service.js"
+			],
+			[
+				"eloq",
+				"src\\app\\services\\ddr\\models\\eloquent_model.js"
+			],
+			[
+				"helper",
+				"src\\app\\services\\helper_service.js"
+			],
+			[
+				"loder",
+				"node_modules\\grunt-ngmin\\node_modules\\ngmin\\test\\loader.js"
+			],
+			[
+				"lwd",
+				"src\\views\\modals\\ddr\\lwds.tpl.html"
+			],
+			[
+				"lwdmo",
+				"src\\app\\services\\ddr\\models\\lwd_model.js"
+			],
+			[
+				"ddr",
+				"src\\views\\jobs\\ddr.tpl.html"
+			],
+			[
+				"surveysta",
+				"src\\app\\services\\ddr\\models\\surveyStation_model.js"
+			],
+			[
+				"pickl",
+				"src\\app\\services\\ddr\\models\\picklists.js"
+			],
+			[
+				"porpos",
+				"src\\app\\controllers\\reports\\bhaProposed_controller.js"
+			],
+			[
+				"propose",
+				"src\\views\\reports\\bhaProposed.tpl.html"
+			],
+			[
+				"bha.tpl",
+				"src\\views\\reports\\bha.tpl.html"
+			],
+			[
+				"bhacon",
+				"src\\app\\controllers\\reports\\bha_controller.js"
+			],
+			[
+				"fail",
+				"src\\views\\modals\\ddr\\bhaComponentFailures.tpl.html"
+			],
+			[
+				"failurec",
+				"src\\app\\controllers\\ddr\\modals\\bhaComponentFailures_controller.js"
+			],
+			[
+				"issuesco",
+				"src\\app\\controllers\\ddr\\modals\\issues_controller.js"
+			],
+			[
+				"picklis",
+				"src\\app\\services\\ddr\\models\\picklists.js"
+			],
+			[
+				"drload",
+				"src\\app\\services\\ddr\\ddrLoader_service.js"
+			],
+			[
+				"storage",
+				"src\\app\\services\\localStorage_service.js"
+			],
+			[
+				"ddrhel",
+				"src\\app\\services\\ddr\\ddrHelper_service.js"
+			],
+			[
+				"dailda",
+				"src\\app\\services\\ddr\\models\\dailyData_model.js"
+			],
+			[
+				"bhastp",
+				"src\\views\\modals\\ddr\\bhas.tpl.html"
+			],
+			[
+				"issueco",
+				"src\\app\\controllers\\ddr\\modals\\issues_controller.js"
+			],
+			[
+				"motorstaco",
+				"src\\app\\controllers\\ddr\\modals\\motorStalls_controller.js"
+			],
+			[
+				"motosta",
+				"src\\app\\services\\ddr\\models\\motorStall_model.js"
+			],
+			[
+				"bhacom",
+				"src\\app\\services\\ddr\\models\\bhaComponent_model.js"
+			],
+			[
+				"bhacompof",
+				"src\\app\\services\\ddr\\models\\bhaComponentFailure_model.js"
+			],
+			[
+				"depthis",
+				"src\\app\\services\\ddr\\models\\depthIssue_model.js"
+			],
+			[
+				"app",
+				"src\\app\\app.js"
+			],
+			[
+				"confi",
+				"src\\app\\config.js"
+			],
+			[
+				"index.htm",
+				"src\\index.html"
+			],
+			[
+				"localstor",
+				"src\\app\\services\\localStorage_service.js"
+			],
+			[
+				"xedita",
+				"src\\vendor\\angular\\angular-xeditable.js"
+			],
+			[
+				"ddrt",
+				"src\\views\\jobs\\ddr.tpl.html"
+			],
+			[
+				"ddrhe",
+				"src\\app\\services\\ddr\\ddrHelper_service.js"
+			],
+			[
+				"daily.tpl",
+				"src\\views\\reports\\daily.tpl.html"
+			],
+			[
+				"morning",
+				"src\\views\\reports\\morningdaily.tpl.html"
+			],
+			[
+				"morni",
+				"src\\app\\controllers\\reports\\morningDaily_controller.js"
+			],
+			[
+				"naviga",
+				"src\\views\\directives\\navigation.tpl.html"
+			],
+			[
+				"mornin",
+				"src\\app\\controllers\\reports\\morningDaily_controller.js"
+			],
+			[
+				"morn",
+				"src\\views\\reports\\morningdaily.tpl.html"
+			],
+			[
+				"catalocon",
+				"src\\app\\controllers\\ddr\\modals\\catalogs_controller.js"
+			],
+			[
+				"locals",
+				"src\\app\\services\\localStorage_service.js"
+			],
+			[
+				"ddrle",
+				"src\\less\\theme\\ddr.less"
+			],
+			[
+				"callou",
+				"src\\less\\theme\\callouts.less"
+			],
+			[
+				"bhacomo",
+				"src\\app\\services\\ddr\\models\\bhaComponentFailure_model.js"
+			],
+			[
+				"bhamode",
+				"src\\app\\services\\ddr\\models\\bha_model.js"
+			],
+			[
+				"bhapoco",
+				"src\\app\\controllers\\ddr\\reports\\bhaProposed_controller.js"
+			],
+			[
+				"bhascontro",
+				"src\\app\\controllers\\ddr\\modals\\bhas_controller.js"
+			],
+			[
+				"issue",
+				"src\\app\\controllers\\ddr\\modals\\issues_controller.js"
+			],
+			[
+				"issu",
+				"src\\views\\modals\\ddr\\issues.tpl.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+			[
+				"chr",
+				"D:\\Documents\\Projects\\addsoftware\\frontends\\chrome\\chrome.sublime-project"
+			],
+			[
+				"",
+				"D:\\Documents\\Projects\\widget-pc\\widgetpc.sublime-project"
+			],
+			[
+				"sim",
+				"D:\\Documents\\Projects\\simple\\simple.sublime-project"
+			],
+			[
+				"si ",
+				"D:\\Documents\\Projects\\simple\\simple.sublime-project"
+			],
+			[
+				"sca",
+				"D:\\Documents\\Projects\\scaffolar\\scaffolar.sublime-project"
+			],
+			[
+				"add",
+				"D:\\Documents\\Projects\\addsoftware\\frontends\\console\\add.sublime-project"
+			],
+			[
+				"chro",
+				"D:\\Documents\\Projects\\addsoftware\\frontends\\chrome\\chrome.sublime-project"
+			]
+		],
+		"width": 380.0
+	},
+	"select_symbol":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"selected_group": 0,
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 247.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}
