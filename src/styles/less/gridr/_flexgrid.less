@@ -1,0 +1,80 @@
+// Set box-sizing globally to handle padding and border widths
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+.@{singular-column-name},
+.@{plural-column-name} {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: @column-top-padding (@column-gutter / 2) @column-bottom-padding;
+  flex-basis: 100%;
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+
+  .row {
+    margin-left: (@column-gutter / -2);
+    margin-right: (@column-gutter / -2);
+  }
+}
+
+.container-fluid {
+  width: 100%;
+  overflow: hidden;
+  padding-left: (@column-gutter / 2);
+  padding-right: (@column-gutter / 2);
+  .clearfix();
+
+  .row {
+    margin-left: (@column-gutter / -2);
+    margin-right: (@column-gutter / -2);
+  }
+}
+
+
+.container {
+  &:extend(.container-fluid);
+
+  @media only screen and (min-width: @small-range-min) {
+    width: @container-small;
+  }
+
+  @media only screen and (min-width: @medium-range-min) {
+    width: @container-medium;
+  }
+
+  @media only screen and (min-width: @large-range-min) {
+    width: @container-large;
+  }
+}
+
+@media only screen {
+  .make-grid(@xsmall-grid-name);
+}
+@media only screen and (min-width: @small-range-min) {
+  .make-grid(@small-grid-name);
+}
+@media only screen and (min-width: @medium-range-min) {
+  .make-grid(@medium-grid-name);
+}
+@media only screen and (min-width: @large-range-min) {
+  .make-grid(@large-grid-name);
+}
+@media only screen and (min-width: @xlarge-range-min) {
+  .make-grid(@xlarge-grid-name);
+}
+@media only print {
+  .make-grid(@size: @print-grid-name);
+}

@@ -1,0 +1,15 @@
+.make-visibility(@parent, @name: visible) {
+  .@{name}-@{parent} {
+    display: block !important;
+  }
+  table.@{name}-@{parent}  { display: table; }
+  tr.@{name}-@{parent}     { display: table-row !important; }
+  th.@{name}-@{parent},
+  td.@{name}-@{parent}     { display: table-cell !important; }
+}
+
+.make-invisibility(@parent, @name: hidden) {
+  .@{name}-@{parent} {
+    display: none !important;
+  }
+}

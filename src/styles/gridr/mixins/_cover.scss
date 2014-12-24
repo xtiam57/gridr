@@ -1,7 +1,0 @@
-@mixin make-cover($height: $cover-height, $imageUrl: false) {
-  @extend .container-cover;
-  min-height: $height;
-  @if $imageUrl != false {
-    background-image: url("#{$imageUrl}");
-  }
-}

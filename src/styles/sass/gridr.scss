@@ -16,5 +16,6 @@ $px-only: false;
 @import "gridr/_settings";
 
 // Here's where the magic of Gridr truly begins!
-@import "gridr/_utilities";
 @import "gridr/_flexgrid";
+@import "gridr/_utilities";
+@import "gridr/_visibility";

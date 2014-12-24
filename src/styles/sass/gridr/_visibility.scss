@@ -1,0 +1,53 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+.show,
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Hide every .visible-* class by default
+// Depending of the media query the element will be shown or hidden
+@include make-invisibility($xsmall-grid-name, visible);
+@include make-invisibility($small-grid-name, visible);
+@include make-invisibility($medium-grid-name, visible);
+@include make-invisibility($large-grid-name, visible);
+@include make-invisibility($xlarge-grid-name, visible);
+@include make-invisibility($print-grid-name, visible);
+
+@media #{$xsmall-only} {
+  @include make-visibility($xsmall-grid-name);
+  @include make-invisibility($xsmall-grid-name);
+}
+
+@media #{$small-only} {
+  @include make-visibility($small-grid-name);
+  @include make-invisibility($small-grid-name);
+}
+
+@media #{$medium-only} {
+  @include make-visibility($medium-grid-name);
+  @include make-invisibility($medium-grid-name);
+}
+
+@media #{$large-only} {
+  @include make-visibility($large-grid-name);
+  @include make-invisibility($large-grid-name);
+}
+
+@media #{$xlarge-only} {
+  @include make-visibility($xlarge-grid-name);
+  @include make-invisibility($xlarge-grid-name);
+}
+
+@media #{$print} {
+  @include make-visibility($print-grid-name);
+  @include make-invisibility($print-grid-name);
+}
+

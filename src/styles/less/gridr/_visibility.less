@@ -1,0 +1,53 @@
+@-ms-viewport {
+  width: device-width;
+}
+
+.show,
+.visible {
+  display: block !important;
+}
+
+.hidden {
+  display: none !important;
+  visibility: hidden !important;
+}
+
+// Hide every .visible-* class by default
+// Depending of the media query the element will be shown or hidden
+.make-invisibility(@xsmall-grid-name, visible);
+.make-invisibility(@small-grid-name, visible);
+.make-invisibility(@medium-grid-name, visible);
+.make-invisibility(@large-grid-name, visible);
+.make-invisibility(@xlarge-grid-name, visible);
+.make-invisibility(@print-grid-name, visible);
+
+@media only screen and (min-width: @xsmall-range-min) and (max-width: @xsmall-range-max) {
+  .make-visibility(@xsmall-grid-name);
+  .make-invisibility(@xsmall-grid-name);
+}
+
+@media only screen and (min-width: @small-range-min) and (max-width:@small-range-max) {
+  .make-visibility(@small-grid-name);
+  .make-invisibility(@small-grid-name);
+}
+
+@media only screen and (min-width: @medium-range-min) and (max-width:@medium-range-max) {
+  .make-visibility(@medium-grid-name);
+  .make-invisibility(@medium-grid-name);
+}
+
+@media only screen and (min-width: @large-range-min) and (max-width:@large-range-max) {
+  .make-visibility(@large-grid-name);
+  .make-invisibility(@large-grid-name);
+}
+
+@media only screen and (min-width: @xlarge-range-min) {
+  .make-visibility(@xlarge-grid-name);
+  .make-invisibility(@xlarge-grid-name);
+}
+
+@media only print {
+  .make-visibility(@print-grid-name);
+  .make-invisibility(@print-grid-name);
+}
+

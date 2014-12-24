@@ -59,27 +59,6 @@ body {
   }
 }
 
-.container-cover {
-  min-height: $cover-height;
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  overflow: hidden;
-  background-repeat: $cover-background-repeat;
-  background-attachment: $cover-background-attachment;
-  background-position: $cover-background-position;
-  background-size: $cover-background-size;
-
-  .row {
-    flex-grow: 1;
-    flex-basis: 0%;
-  }
-}
-
-.cover-scroll { background-attachment: scroll !important; }
-.cover-fixed { background-attachment: fixed !important; }
-
 @media #{$xsmall-up} { @include make-grid($size: $xsmall-grid-name); }
 @media #{$small-up} { @include make-grid($size: $small-grid-name); }
 @media #{$medium-up} { @include make-grid($size: $medium-grid-name); }

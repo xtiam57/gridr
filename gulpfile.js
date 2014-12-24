@@ -1,68 +1,57 @@
-var config = {
-
-  SRC_PATH     : 'src',
-  DIST_PATH    : 'dist',
-
-
-  ENV          : 'development',
-
-
-  get SASS_PATH() {
-    return [
-      this.SRC_PATH + '/styles/gridr.scss',
-      this.SRC_PATH + '/styles/normalize.scss',
-      this.SRC_PATH + '/styles/style.scss',
-    ];
-  },
-  get SASS_WATCH() {
-    return this.SRC_PATH + '/styles/**/*.scss';
-  },
-
-
-  get CSS_PATH() {
-    return this.DIST_PATH + '/css';
-  },
-
-
-  get HTML_WATCH() {
-    return [
-      this.SRC_PATH + '/index.html',
-    ];
-  },
-  get HTML_DIST() {
-    return this.DIST_PATH;
-  },
-};
+var ENV = 'DEVELOPMENT',
+    PREPROCESSOR = 'less';
 
 var gulp = require('gulp'),
-    plumber = require('gulp-plumber'),
-    rename = require('gulp-rename'),
-    browserSync = require('browser-sync'),
-    reload = browserSync.reload,
-    sass = require('gulp-ruby-sass'),
     autoprefixer = require('gulp-autoprefixer'),
-    htmlmin = require('gulp-htmlmin'),
-    runSequence = require('gulp-run-sequence');
+    browserSync = require('browser-sync'),
+    gulpif = require('gulp-if'),
+    less = require('gulp-less'),
+    minifyCSS = require('gulp-minify-css'),
+    newer = require('gulp-newer'),
+    plumber = require('gulp-plumber'),
+    reload = browserSync.reload,
+    runSequence = require('gulp-run-sequence'),
+    sass = require('gulp-ruby-sass');
 
-gulp.task('browser-sync', function() {
+// Connects with a local server (development)
+gulp.task('connect', function() {
   browserSync({
+    port: 7070,
     server: {
-      baseDir: [
-        config.SRC_PATH,
-        config.DIST_PATH
-      ],
-    }
+      baseDir: ['src', 'dist'],
+    },
   });
 });
 
-gulp.task('sass', function() {
-  gulp.src(config.SASS_PATH)
+// Compiles, auto-prefixes and minifies all .less files
+gulp.task('less', function() {
+  // NOTE: if I return the stream, when there is an error, everything breaks
+  gulp.src('src/styles/less/{normalize,gridr,style}.less')
     .pipe(plumber())
+    .pipe(newer('dist/css'))
+    .pipe(less())
+    .pipe(autoprefixer(
+      'last 2 version',
+      '> 1%',
+      'ie 8',
+      'ie 9',
+      'ios 6',
+      'android 4'
+    ))
+    .pipe(gulpif(ENV !== 'DEVELOPMENT', minifyCSS({ keepBreaks: true, keepSpecialComments: 0 })))
+    .pipe(gulp.dest('dist/css'))
+    .pipe(reload({ stream: true }));
+});
+
+gulp.task('sass', function() {
+  return gulp.src('src/styles/sass/{normalize,gridr,style}.scss')
+    .pipe(plumber())
+    .pipe(newer('dist/css'))
     .pipe(sass({
       compass: true,
-      lineNumbers: false,
+      lineNumbers: true,
       precision: 6,
-      style: (config.ENV === 'development' ? 'nested' : 'compressed')
+      style: ENV === 'DEVELOPMENT' ? 'nested' : 'compressed'
     }))
     .pipe(autoprefixer(
       'last 2 version',
@@ -72,28 +61,31 @@ gulp.task('sass', function() {
       'ios 6',
       'android 4'
     ))
-    .pipe(gulp.dest(config.CSS_PATH))
-    .pipe(browserSync.reload({ stream: true }));
+    .pipe(gulp.dest('dist/css'))
+    .pipe(reload({ stream: true }));
 });
 
-gulp.task('html', function() {
-  return gulp.src(config.HTML_WATCH, { base: config.SRC_PATH })
-    .pipe(htmlmin({ removeComments: true, collapseWhitespace: true }))
-    .pipe(gulp.dest(config.HTML_DIST));
-});
-
-gulp.task('reload', function() {
-  browserSync.reload({ once: true });
+// Build task (for production only)
+gulp.task('build', function () {
+  ENV = 'PRODUCTION';
+  runSequence(PREPROCESSOR);
 });
 
 gulp.task('watch', function() {
-  gulp.watch(config.HTML_WATCH, ['reload']);
-  gulp.watch(config.FONTS_SRC, ['fonts']);
-  gulp.watch(config.SASS_WATCH, ['sass']);
+  gulp.watch(['src/**/*.js'], reload);
+  gulp.watch(['src/**/*.css'], reload);
+  gulp.watch(['src/**/*.html'], reload);
+  gulp.watch(['src/**/*.{png,jpg}'], reload);
+
+  if (PREPROCESSOR === 'less')
+    gulp.watch(['src/styles/less/**/*.less'], ['less']);
+  else
+    gulp.watch(['src/styles/sass/**/*.scss'], ['sass']);
 });
 
-gulp.task('default', function() {
-  runSequence(['sass'], 'browser-sync', 'watch');
+// Build and serves
+gulp.task('default', function () {
+  runSequence(PREPROCESSOR, 'connect', 'watch');
 });
 
-gulp.task('build', ['sass', 'html']);
+

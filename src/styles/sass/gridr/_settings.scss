@@ -17,33 +17,33 @@ $total-columns         : 12 !default;
 
 // from smartphones to tablets
 $xsmall-grid-name: xsmall !default;
-$xsmall-range-min: em(480px) !default;
-$xsmall-range-max: em(767px) !default;
+$xsmall-range-min: rem(480px) !default;
+$xsmall-range-max: rem(767px) !default;
 
 // for tablets
 $small-grid-name: small !default;
-$small-range-min: em(768px) !default;
-$small-range-max: em(991px) !default;
+$small-range-min: rem(768px) !default;
+$small-range-max: rem(991px) !default;
 
 // for old computers
 $medium-grid-name: medium !default;
-$medium-range-min: em(992px) !default;
-$medium-range-max: em(1024px) !default;
+$medium-range-min: rem(992px) !default;
+$medium-range-max: rem(1024px) !default;
 
 // from old computers to widescreen laptops
 $large-grid-name: large !default;
-$large-range-min: em(1025px) !default;
-$large-range-max: em(1440px) !default;
+$large-range-min: rem(1025px) !default;
+$large-range-max: rem(1440px) !default;
 
 // from widescreen laptops to HD resolutions
 $xlarge-grid-name: xlarge !default;
-$xlarge-range-min: em(1441px);
-$xlarge-range-max: em(1920px);
+$xlarge-range-min: rem(1441px);
+$xlarge-range-max: rem(1920px);
 
 // Container sizes
-$container-small: em(750px);
-$container-medium: em(960px);
-$container-large: em(1200px);
+$container-small: rem(750px);
+$container-medium: rem(960px);
+$container-large: rem(1200px);
 
 // Media queries:
 $screen: "only screen" !default;
@@ -77,17 +77,3 @@ $print: "only print" !default;
 
 // Grid name
 $print-grid-name: print !default;
-
-
-
-
-// +++++
-// Cover
-// +++++
-
-$cover-container-height: 100% !default;
-$cover-height: 100% !default;
-$cover-background-repeat: no-repeat !default;
-$cover-background-attachment: scroll !default;
-$cover-background-position: 50% 50% !default;
-$cover-background-size: cover !default;

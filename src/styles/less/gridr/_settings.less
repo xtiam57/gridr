@@ -1,0 +1,58 @@
+// +++++
+// Gridr
+// +++++
+// Stats from: http://gs.statcounter.com/#resolution-ww-monthly-201306-201405-bar
+
+// General names
+@singular-column-name : column;
+@plural-column-name   : columns;
+
+// Grid general info
+@column-gutter         : (30 / @rem);
+@column-top-padding    : 0;
+@column-bottom-padding : 0;
+@total-columns         : 12;
+
+// Media Query Ranges:
+
+// from smartphones to tablets
+@xsmall-grid-name: xsmall;
+@xsmall-range-min: (480 / @rem);
+@xsmall-range-max: (767 / @rem);
+
+// for tablets
+@small-grid-name: small;
+@small-range-min: (768 / @rem);
+@small-range-max: (991 / @rem);
+
+// for old computers
+@medium-grid-name: medium;
+@medium-range-min: (992 / @rem);
+@medium-range-max: (1024 / @rem);
+
+// from old computers to widescreen laptops
+@large-grid-name: large;
+@large-range-min: (1025 / @rem);
+@large-range-max: (1440 / @rem);
+
+// from widescreen laptops to HD resolutions
+@xlarge-grid-name: xlarge;
+@xlarge-range-min: (1441 / @rem);
+@xlarge-range-max: (1920 / @rem);
+
+// Container sizes
+@container-small: (750 / @rem);
+@container-medium: (960 / @rem);
+@container-large: (1200 / @rem);
+
+// Media queries:
+@landscape: "only screen and (orientation: landscape)";
+@portrait: "only screen and (orientation: portrait)";
+
+
+// +++++
+// Print
+// +++++
+
+// Grid name
+@print-grid-name: print;

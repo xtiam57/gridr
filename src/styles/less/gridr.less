@@ -1,0 +1,17 @@
+// Since the typical default browser font-size is 16px, that makes the calculation for grid size.
+// If you want your base font-size to be different and not have it affect the grid breakpoints,
+// set @rem-base to @base-font-size and make sure @base-font-size is a px value.
+@base-font-size: 16px;
+
+// Those variables works with rem and em functions
+@rem: (unit(@base-font-size) * 1rem);
+@m: (unit(@base-font-size) * 1em);
+
+// The core and heart of Simple
+@import "gridr/_mixins";
+@import "gridr/_settings";
+
+// Here's where the magic of Gridr truly begins!
+@import "gridr/_flexgrid";
+@import "gridr/_utilities";
+@import "gridr/_visibility";
